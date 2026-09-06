@@ -3,177 +3,671 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Padmavati Ceiling Impex | Gypsum Ceiling & Partition Systems</title>
+
 <meta name="description" content="Padmavati Ceiling Impex - Wholesale supplier of gypsum ceiling, grid ceiling and partition system products.">
+
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,sans-serif;background:#f7f7f5;color:#222;line-height:1.6}
-header{background:#111;color:white;padding:22px 6%;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-.logo{font-size:25px;font-weight:700}
-.logo span{color:#d6a84f}
-nav a{color:white;text-decoration:none;margin:0 10px;font-size:14px}
-.hero{padding:80px 6%;background:linear-gradient(135deg,#171717,#3b321f);color:white}
-.hero h1{font-size:46px;line-height:1.1;max-width:800px}
-.hero h1 span{color:#e0b85c}
-.hero p{font-size:19px;margin:20px 0;max-width:650px;color:#ddd}
-.btn{display:inline-block;padding:13px 22px;background:#d6a84f;color:#111;text-decoration:none;font-weight:700;border-radius:6px;margin-right:8px}
-.btn.dark{background:white}
-section{padding:60px 6%;max-width:1200px;margin:auto}
-.title{text-align:center;margin-bottom:35px}
-.title h2{font-size:32px}
-.title p{color:#666}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-.card{background:white;padding:28px;border-radius:10px;box-shadow:0 4px 18px #00000012;border:1px solid #eee}
-.card h3{margin-bottom:10px}
-.card p{color:#666;font-size:14px}
-.icon{font-size:34px;margin-bottom:12px}
-.about{background:white}
-.contact{background:#171717;color:white}
-.contact .card{color:#222}
-footer{background:#0b0b0b;color:#aaa;text-align:center;padding:25px 6%;font-size:13px}
-@media(max-width:700px){
-.hero h1{font-size:35px}
-nav{width:100%}
-nav a{margin:0 6px}
-}
-</style>.logo{
-  display:flex;
-  align-items:center;
-  height:44px;
-  width:auto;
-  overflow:hidden;
+
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.logo img{
-  display:block;
-  height:38px !important;
-  width:auto !important;
-  max-width:160px !important;
-  object-fit:contain;
+html {
+  scroll-behavior: smooth;
 }
 
-@media(max-width:700px){
-  .logo{
-    height:38px;
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f5;
+  color: #222;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+  background: #111;
+  color: white;
+
+  min-height: 70px;
+  padding: 10px 6%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+}
+
+
+/* LOGO CONTAINER */
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  width: 170px;
+  height: 48px;
+
+  overflow: hidden;
+}
+
+
+/* LOGO IMAGE */
+
+.logo img {
+  display: block;
+
+  height: 42px;
+  width: auto;
+
+  max-width: 170px;
+
+  object-fit: contain;
+}
+
+
+/* NAVIGATION */
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+
+  margin-left: 20px;
+
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #d6a84f;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  padding: 80px 6%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #171717,
+      #3b321f
+    );
+
+  color: white;
+}
+
+.hero h1 {
+  font-size: 46px;
+  line-height: 1.1;
+
+  max-width: 800px;
+}
+
+.hero h1 span {
+  color: #e0b85c;
+}
+
+.hero p {
+  font-size: 19px;
+
+  margin: 20px 0;
+
+  max-width: 650px;
+
+  color: #ddd;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+  display: inline-block;
+
+  padding: 13px 22px;
+
+  background: #d6a84f;
+
+  color: #111;
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  border-radius: 6px;
+
+  margin-right: 8px;
+}
+
+.btn.dark {
+  background: white;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+  padding: 60px 6%;
+
+  max-width: 1200px;
+
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+
+  margin-bottom: 35px;
+}
+
+.title h2 {
+  font-size: 32px;
+}
+
+.title p {
+  color: #666;
+}
+
+
+/* =========================
+   PRODUCT GRID
+========================= */
+
+.grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(220px, 1fr)
+    );
+
+  gap: 20px;
+}
+
+
+/* PRODUCT CARD */
+
+.card {
+  background: white;
+
+  padding: 28px;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 4px 18px
+    rgba(0,0,0,0.07);
+
+  border: 1px solid #eee;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #666;
+
+  font-size: 14px;
+}
+
+.icon {
+  font-size: 34px;
+
+  margin-bottom: 12px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+  background: white;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+  background: #171717;
+
+  color: white;
+}
+
+.contact .card {
+  color: #222;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  background: #0b0b0b;
+
+  color: #aaa;
+
+  text-align: center;
+
+  padding: 25px 6%;
+
+  font-size: 13px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  header {
+    min-height: 62px;
+
+    padding: 8px 5%;
+
+    flex-wrap: wrap;
   }
 
-  .logo img{
-    height:32px !important;
-    max-width:135px !important;
+
+  /* SMALL MOBILE LOGO */
+
+  .logo {
+    width: 140px;
+    height: 40px;
   }
+
+  .logo img {
+    height: 34px;
+    max-width: 140px;
+  }
+
+
+  /* MOBILE NAV */
+
+  nav {
+    width: 100%;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-right: 14px;
+
+    font-size: 13px;
+  }
+
+
+  /* MOBILE HERO */
+
+  .hero {
+    padding: 60px 5%;
+  }
+
+  .hero h1 {
+    font-size: 35px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+
+  /* MOBILE SECTIONS */
+
+  section {
+    padding: 45px 5%;
+  }
+
 }
+
+</style>
 </head>
+
 
 <body>
 
-<header>
-<div class="logo">
-  display:flex;
-  align-items:center;
-  height:42px;
-}
 
-.logo img{
-  height:26px !important;
-  width:auto !important;
-  max-width:100px !important;
-}">
-  <img src="https://raw.githubusercontent.com/padmavaticeilingimpex/padmavaticeilingimpex.github.io/main/211956-Picsart-BackgroundRemover.png"
-       alt="Padmavati Ceiling Impex Logo">
-</div>
-<nav>
-<a href="#products">Products</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</nav>
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+  <div class="logo">
+
+    <img
+      src="https://raw.githubusercontent.com/padmavaticeilingimpex/padmavaticeilingimpex.github.io/main/211956-Picsart-BackgroundRemover.png"
+      alt="Padmavati Ceiling Impex Logo"
+    >
+
+  </div>
+
+
+  <nav>
+
+    <a href="#products">Products</a>
+
+    <a href="#about">About</a>
+
+    <a href="#contact">Contact</a>
+
+  </nav>
+
 </header>
 
+
+
+<!-- =========================
+     HERO
+========================= -->
+
 <div class="hero">
-<h1>Gypsum Ceiling & <span>Partition Systems</span></h1>
-<p>Wholesale supplier of quality ceiling and partition system materials for contractors, builders, interior professionals and projects.</p>
-<a class="btn" href="#products">View Products</a>
-<a class="btn dark" href="#contact">Contact Us</a>
+
+  <h1>
+    Gypsum Ceiling &
+    <span>Partition Systems</span>
+  </h1>
+
+
+  <p>
+    Wholesale supplier of quality ceiling and
+    partition system materials for contractors,
+    builders, interior professionals and projects.
+  </p>
+
+
+  <a class="btn" href="#products">
+    View Products
+  </a>
+
+
+  <a class="btn dark" href="#contact">
+    Contact Us
+  </a>
+
 </div>
+
+
+
+<!-- =========================
+     PRODUCTS
+========================= -->
 
 <section id="products">
-<div class="title">
-<h2>Our Products</h2>
-<p>Ceiling and partition solutions for your projects</p>
-</div>
 
-<div class="grid">
-<div class="card">
-<div class="icon">▦</div>
-<h3>Gypsum Ceiling Systems</h3>
-<p>Gypsum ceiling boards and accessories for modern false-ceiling applications.</p>
-</div>
+  <div class="title">
 
-<div class="card">
-<div class="icon">▤</div>
-<h3>Grid Ceiling Systems</h3>
-<p>Grid ceiling frames and tiles suitable for commercial and residential projects.</p>
-</div>
+    <h2>
+      Our Products
+    </h2>
 
-<div class="card">
-<div class="icon">▥</div>
-<h3>Partition Systems</h3>
-<p>Materials and framing systems for gypsum partition applications.</p>
-</div>
+    <p>
+      Ceiling and partition solutions for your projects
+    </p>
 
-<div class="card">
-<div class="icon">◈</div>
-<h3>Ceiling Sections & Frames</h3>
-<p>Quality framing components and ceiling sections for professional installation.</p>
-</div>
+  </div>
 
-<div class="card">
-<div class="icon">◆</div>
-<h3>Gypsum Boards</h3>
-<p>Plain gypsum boards and related ceiling and partition materials.</p>
-</div>
 
-<div class="card">
-<div class="icon">★</div>
-<h3>Wholesale Supply</h3>
-<p>Bulk supply support for contractors, dealers, builders and large projects.</p>
-</div>
-</div>
+  <div class="grid">
+
+
+    <div class="card">
+
+      <div class="icon">▦</div>
+
+      <h3>
+        Gypsum Ceiling Systems
+      </h3>
+
+      <p>
+        Gypsum ceiling boards and accessories
+        for modern false-ceiling applications.
+      </p>
+
+    </div>
+
+
+
+    <div class="card">
+
+      <div class="icon">▤</div>
+
+      <h3>
+        Grid Ceiling Systems
+      </h3>
+
+      <p>
+        Grid ceiling frames and tiles suitable
+        for commercial and residential projects.
+      </p>
+
+    </div>
+
+
+
+    <div class="card">
+
+      <div class="icon">▥</div>
+
+      <h3>
+        Partition Systems
+      </h3>
+
+      <p>
+        Materials and framing systems for
+        gypsum partition applications.
+      </p>
+
+    </div>
+
+
+
+    <div class="card">
+
+      <div class="icon">◈</div>
+
+      <h3>
+        Ceiling Sections & Frames
+      </h3>
+
+      <p>
+        Quality framing components and ceiling
+        sections for professional installation.
+      </p>
+
+    </div>
+
+
+
+    <div class="card">
+
+      <div class="icon">◆</div>
+
+      <h3>
+        Gypsum Boards
+      </h3>
+
+      <p>
+        Plain gypsum boards and related ceiling
+        and partition materials.
+      </p>
+
+    </div>
+
+
+
+    <div class="card">
+
+      <div class="icon">★</div>
+
+      <h3>
+        Wholesale Supply
+      </h3>
+
+      <p>
+        Bulk supply support for contractors,
+        dealers, builders and large projects.
+      </p>
+
+    </div>
+
+
+  </div>
+
 </section>
+
+
+
+<!-- =========================
+     ABOUT
+========================= -->
 
 <section id="about" class="about">
-<div class="title">
-<h2>Padmavati Ceiling Impex</h2>
-</div>
-<p style="max-width:850px;margin:auto;text-align:center;color:#555">
-We supply gypsum ceiling, grid ceiling and partition system products with a focus on dependable materials and wholesale service. Our goal is to provide practical ceiling and partition solutions for contractors, builders, interior professionals and projects.
-</p>
+
+  <div class="title">
+
+    <h2>
+      Padmavati Ceiling Impex
+    </h2>
+
+  </div>
+
+
+  <p
+    style="
+      max-width:850px;
+      margin:auto;
+      text-align:center;
+      color:#555;
+    "
+  >
+
+    We supply gypsum ceiling, grid ceiling and
+    partition system products with a focus on
+    dependable materials and wholesale service.
+
+    Our goal is to provide practical ceiling and
+    partition solutions for contractors, builders,
+    interior professionals and projects.
+
+  </p>
+
 </section>
+
+
+
+<!-- =========================
+     CONTACT
+========================= -->
 
 <section id="contact" class="contact">
-<div class="title">
-<h2>Contact Padmavati Ceiling Impex</h2>
-<p>Get in touch for product enquiries and wholesale orders.</p>
-</div>
 
-<div class="grid">
-<div class="card">
-<h3>Visit Our Shop</h3>
-<p>No. 41, West Side, Bharathy Nagar 3rd Street,<br>
-Maduravoyal, Chennai – 600095</p>
-</div>
+  <div class="title">
 
-<div class="card">
-<h3>Call / WhatsApp</h3>
-<p>8122668792</p>
-<br>
-<a class="btn" href="https://wa.me/918122668792">WhatsApp Us</a>
-</div>
-</div>
+    <h2>
+      Contact Padmavati Ceiling Impex
+    </h2>
+
+    <p>
+      Get in touch for product enquiries
+      and wholesale orders.
+    </p>
+
+  </div>
+
+
+  <div class="grid">
+
+
+    <div class="card">
+
+      <h3>
+        Visit Our Shop
+      </h3>
+
+      <p>
+
+        No. 41, West Side,
+        Bharathy Nagar 3rd Street,
+
+        <br>
+
+        Maduravoyal,
+        Chennai – 600095
+
+      </p>
+
+    </div>
+
+
+
+    <div class="card">
+
+      <h3>
+        Call / WhatsApp
+      </h3>
+
+      <p>
+        8122668792
+      </p>
+
+      <br>
+
+      <a
+        class="btn"
+        href="https://wa.me/918122668792"
+      >
+        WhatsApp Us
+      </a>
+
+    </div>
+
+
+  </div>
+
 </section>
 
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer>
-© 2026 Padmavati Ceiling Impex · Gypsum Ceiling & Partition Systems
+
+  © 2026 Padmavati Ceiling Impex
+  · Gypsum Ceiling & Partition Systems
+
 </footer>
+
 
 </body>
 </html>
