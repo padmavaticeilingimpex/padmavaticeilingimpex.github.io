@@ -6,29 +6,31 @@
 
 <title>Padmavati Ceiling Impex | Gypsum Ceiling & Partition Systems</title>
 
-<meta name="description" content="Padmavati Ceiling Impex - Wholesale supplier of gypsum ceiling, grid ceiling and partition system products.">
+<meta name="description"
+content="Padmavati Ceiling Impex - Gypsum ceiling, grid ceiling and partition system materials for contractors, builders and interior professionals.">
 
 <style>
 
-/* =========================
-   BASIC RESET
-========================= */
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* RESET */
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
 
-html {
-  scroll-behavior: smooth;
+html{
+  scroll-behavior:smooth;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background: #f7f7f5;
-  color: #222;
-  line-height: 1.6;
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f7f6f2;
+  color:#171717;
+  line-height:1.6;
+}
+
+a{
+  text-decoration:none;
 }
 
 
@@ -36,66 +38,53 @@ body {
    HEADER
 ========================= */
 
-header {
-  background: #111;
-  color: white;
-
-  min-height: 70px;
-  padding: 10px 6%;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  gap: 20px;
+header{
+  background:#0c0c0c;
+  color:#fff;
+  min-height:92px;
+  padding:10px 5%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:1px solid #3d321e;
 }
 
 
-/* LOGO CONTAINER */
+/* LOGO */
 
-.logo {
-  display: flex;
-  align-items: center;
-
-  width: 170px;
-  height: 48px;
-
-  overflow: hidden;
+.logo{
+  display:flex;
+  align-items:center;
+  width:370px;
+  height:72px;
+  overflow:hidden;
 }
 
-
-/* LOGO IMAGE */
-
-.logo img {
-  display: block;
-
-  height: 42px;
-  width: auto;
-
-  max-width: 170px;
-
-  object-fit: contain;
+.logo img{
+  display:block;
+  width:auto;
+  height:66px;
+  max-width:360px;
+  object-fit:contain;
 }
 
 
 /* NAVIGATION */
 
-nav {
-  display: flex;
-  align-items: center;
+nav{
+  display:flex;
+  align-items:center;
+  gap:30px;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-
-  margin-left: 20px;
-
-  font-size: 14px;
+nav a{
+  color:#fff;
+  font-size:15px;
+  font-weight:600;
 }
 
-nav a:hover {
-  color: #d6a84f;
+nav a:hover{
+  color:#e2b653;
 }
 
 
@@ -103,142 +92,180 @@ nav a:hover {
    HERO
 ========================= */
 
-.hero {
-  padding: 80px 6%;
+.hero{
+  min-height:540px;
+  padding:85px 6%;
+  display:flex;
+  align-items:center;
+  color:white;
 
   background:
-    linear-gradient(
-      135deg,
-      #171717,
-      #3b321f
-    );
-
-  color: white;
+  linear-gradient(
+    90deg,
+    rgba(8,8,8,.98) 0%,
+    rgba(25,22,16,.95) 50%,
+    rgba(55,42,20,.72) 100%
+  );
 }
 
-.hero h1 {
-  font-size: 46px;
-  line-height: 1.1;
-
-  max-width: 800px;
+.hero-inner{
+  max-width:700px;
 }
 
-.hero h1 span {
-  color: #e0b85c;
+.kicker{
+  letter-spacing:7px;
+  font-size:13px;
+  color:#e0b653;
+  font-weight:700;
+  margin-bottom:18px;
 }
 
-.hero p {
-  font-size: 19px;
-
-  margin: 20px 0;
-
-  max-width: 650px;
-
-  color: #ddd;
+.hero h1{
+  font-size:58px;
+  line-height:1.05;
+  margin-bottom:24px;
 }
 
-
-/* =========================
-   BUTTONS
-========================= */
-
-.btn {
-  display: inline-block;
-
-  padding: 13px 22px;
-
-  background: #d6a84f;
-
-  color: #111;
-
-  text-decoration: none;
-
-  font-weight: 700;
-
-  border-radius: 6px;
-
-  margin-right: 8px;
+.hero h1 span{
+  color:#e2b653;
 }
 
-.btn.dark {
-  background: white;
+.hero p{
+  font-size:19px;
+  color:#ddd;
+  max-width:650px;
+  margin-bottom:30px;
 }
 
 
-/* =========================
-   SECTIONS
-========================= */
+/* BUTTONS */
 
-section {
-  padding: 60px 6%;
-
-  max-width: 1200px;
-
-  margin: auto;
+.buttons{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
 }
 
-.title {
-  text-align: center;
-
-  margin-bottom: 35px;
+.btn{
+  display:inline-block;
+  padding:14px 25px;
+  border-radius:7px;
+  background:#e1b34f;
+  color:#111;
+  font-weight:700;
 }
 
-.title h2 {
-  font-size: 32px;
+.btn.light{
+  background:#fff;
 }
 
-.title p {
-  color: #666;
+
+/* TRUST */
+
+.trust{
+  display:flex;
+  gap:38px;
+  margin-top:42px;
+  flex-wrap:wrap;
+}
+
+.trust div{
+  color:#eee;
+  font-size:14px;
+}
+
+.trust strong{
+  display:block;
+  color:#e2b653;
+  font-size:20px;
 }
 
 
 /* =========================
-   PRODUCT GRID
+   GENERAL SECTIONS
 ========================= */
 
-.grid {
-  display: grid;
+section{
+  padding:78px 5%;
+  max-width:1250px;
+  margin:auto;
+}
 
+.section-head{
+  text-align:center;
+  margin-bottom:42px;
+}
+
+.eyebrow{
+  letter-spacing:5px;
+  font-size:12px;
+  font-weight:700;
+  color:#a77b29;
+  margin-bottom:8px;
+}
+
+.section-head h2{
+  font-size:40px;
+  line-height:1.2;
+}
+
+.section-head p{
+  color:#666;
+  margin-top:8px;
+}
+
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products{
+  background:#f7f6f2;
+}
+
+.product-grid{
+  display:grid;
   grid-template-columns:
-    repeat(
-      auto-fit,
-      minmax(220px, 1fr)
-    );
-
-  gap: 20px;
+  repeat(3,1fr);
+  gap:20px;
 }
 
-
-/* PRODUCT CARD */
-
-.card {
-  background: white;
-
-  padding: 28px;
-
-  border-radius: 10px;
-
+.card{
+  background:#fff;
+  padding:30px;
+  border-radius:12px;
   box-shadow:
-    0 4px 18px
-    rgba(0,0,0,0.07);
-
-  border: 1px solid #eee;
+  0 8px 25px rgba(0,0,0,.07);
+  border:1px solid #eee;
+  transition:.2s;
 }
 
-.card h3 {
-  margin-bottom: 10px;
+.card:hover{
+  transform:translateY(-3px);
 }
 
-.card p {
-  color: #666;
+.icon{
+  width:52px;
+  height:52px;
+  border-radius:50%;
+  background:#f8e8c7;
 
-  font-size: 14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:24px;
+  margin-bottom:18px;
 }
 
-.icon {
-  font-size: 34px;
+.card h3{
+  font-size:21px;
+  margin-bottom:10px;
+}
 
-  margin-bottom: 12px;
+.card p{
+  color:#666;
+  font-size:15px;
 }
 
 
@@ -246,8 +273,45 @@ section {
    ABOUT
 ========================= */
 
-.about {
-  background: white;
+.about{
+  max-width:none;
+  padding:0;
+
+  background:#fff;
+
+  display:grid;
+  grid-template-columns:1fr 1fr;
+}
+
+.about-photo{
+  min-height:420px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #15130f,
+    #8b6a32,
+    #1a1711
+  );
+}
+
+.about-copy{
+  padding:70px 7%;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.about-copy h2{
+  font-size:40px;
+  line-height:1.2;
+  margin-bottom:20px;
+}
+
+.about-copy p{
+  color:#555;
+  max-width:600px;
 }
 
 
@@ -255,14 +319,44 @@ section {
    CONTACT
 ========================= */
 
-.contact {
-  background: #171717;
-
-  color: white;
+.contact{
+  max-width:none;
+  background:#111;
+  color:#fff;
 }
 
-.contact .card {
-  color: #222;
+.contact .section-head p{
+  color:#aaa;
+}
+
+.contact-grid{
+  max-width:1150px;
+  margin:auto;
+
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
+}
+
+.contact-card{
+  background:#fff;
+  color:#222;
+
+  border-radius:12px;
+  padding:30px;
+}
+
+.contact-card h3{
+  margin-bottom:10px;
+  font-size:21px;
+}
+
+.contact-card p{
+  color:#666;
+}
+
+.contact-card .btn{
+  margin-top:20px;
 }
 
 
@@ -270,16 +364,58 @@ section {
    FOOTER
 ========================= */
 
-footer {
-  background: #0b0b0b;
+footer{
+  background:#080808;
+  color:#aaa;
 
-  color: #aaa;
+  text-align:center;
 
-  text-align: center;
+  padding:25px;
 
-  padding: 25px 6%;
+  font-size:13px;
+}
 
-  font-size: 13px;
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:900px){
+
+  header{
+    min-height:82px;
+  }
+
+  .logo{
+    width:290px;
+    height:64px;
+  }
+
+  .logo img{
+    height:58px;
+    max-width:285px;
+  }
+
+  nav{
+    gap:18px;
+  }
+
+  .hero h1{
+    font-size:48px;
+  }
+
+  .product-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .about{
+    grid-template-columns:1fr;
+  }
+
+  .about-photo{
+    min-height:280px;
+  }
+
 }
 
 
@@ -287,63 +423,67 @@ footer {
    MOBILE
 ========================= */
 
-@media (max-width: 700px) {
+@media(max-width:600px){
 
-  header {
-    min-height: 62px;
-
-    padding: 8px 5%;
-
-    flex-wrap: wrap;
+  header{
+    min-height:76px;
+    padding:7px 5%;
   }
 
+  /*
+     PERFECT MOBILE LOGO SIZE
+  */
 
-  /* SMALL MOBILE LOGO */
-
-  .logo {
-    width: 140px;
-    height: 40px;
+  .logo{
+    width:205px;
+    height:55px;
   }
 
-  .logo img {
-    height: 34px;
-    max-width: 140px;
+  .logo img{
+    height:50px;
+    max-width:200px;
   }
 
-
-  /* MOBILE NAV */
-
-  nav {
-    width: 100%;
+  nav{
+    gap:10px;
   }
 
-  nav a {
-    margin-left: 0;
-    margin-right: 14px;
-
-    font-size: 13px;
+  nav a{
+    font-size:11px;
   }
 
-
-  /* MOBILE HERO */
-
-  .hero {
-    padding: 60px 5%;
+  .hero{
+    min-height:510px;
+    padding:65px 6%;
   }
 
-  .hero h1 {
-    font-size: 35px;
+  .hero h1{
+    font-size:38px;
   }
 
-  .hero p {
-    font-size: 16px;
+  .hero p{
+    font-size:16px;
   }
 
+  .trust{
+    gap:18px;
+    margin-top:30px;
+  }
 
-  /* MOBILE SECTIONS */
+  section{
+    padding:55px 5%;
+  }
 
-  section {
-    padding: 45px 5%;
+  .section-head h2{
+    font-size:32px;
+  }
+
+  .product-grid{
+    grid-template-columns:1fr;
+  }
+
+  .contact-grid{
+    grid-template-columns:1fr;
   }
 
 }
@@ -361,14 +501,14 @@ footer {
 
 <header>
 
-  <div class="logo">
+  <a class="logo" href="#">
 
     <img
       src="https://raw.githubusercontent.com/padmavaticeilingimpex/padmavaticeilingimpex.github.io/main/211956-Picsart-BackgroundRemover.png"
       alt="Padmavati Ceiling Impex Logo"
     >
 
-  </div>
+  </a>
 
 
   <nav>
@@ -389,31 +529,70 @@ footer {
      HERO
 ========================= -->
 
-<div class="hero">
+<section class="hero">
 
-  <h1>
-    Gypsum Ceiling &
-    <span>Partition Systems</span>
-  </h1>
+  <div class="hero-inner">
 
-
-  <p>
-    Wholesale supplier of quality ceiling and
-    partition system materials for contractors,
-    builders, interior professionals and projects.
-  </p>
+    <div class="kicker">
+      BUILD BETTER SPACES
+    </div>
 
 
-  <a class="btn" href="#products">
-    View Products
-  </a>
+    <h1>
+      Gypsum Ceiling &
+      <span>Partition Systems</span>
+    </h1>
 
 
-  <a class="btn dark" href="#contact">
-    Contact Us
-  </a>
+    <p>
+      Wholesale supplier of quality ceiling and
+      partition system materials for contractors,
+      builders, interior professionals and projects.
+    </p>
 
-</div>
+
+    <div class="buttons">
+
+      <a
+        class="btn"
+        href="#products"
+      >
+        View Products →
+      </a>
+
+
+      <a
+        class="btn light"
+        href="#contact"
+      >
+        Contact Us
+      </a>
+
+    </div>
+
+
+    <div class="trust">
+
+      <div>
+        <strong>✓</strong>
+        Quality Products
+      </div>
+
+      <div>
+        <strong>▣</strong>
+        Wholesale Supply
+      </div>
+
+      <div>
+        <strong>★</strong>
+        Trusted Service
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 
 
@@ -421,9 +600,16 @@ footer {
      PRODUCTS
 ========================= -->
 
-<section id="products">
+<section
+  id="products"
+  class="products"
+>
 
-  <div class="title">
+  <div class="section-head">
+
+    <div class="eyebrow">
+      OUR PRODUCTS
+    </div>
 
     <h2>
       Our Products
@@ -436,12 +622,14 @@ footer {
   </div>
 
 
-  <div class="grid">
+  <div class="product-grid">
 
 
     <div class="card">
 
-      <div class="icon">▦</div>
+      <div class="icon">
+        ▦
+      </div>
 
       <h3>
         Gypsum Ceiling Systems
@@ -458,7 +646,9 @@ footer {
 
     <div class="card">
 
-      <div class="icon">▤</div>
+      <div class="icon">
+        ▤
+      </div>
 
       <h3>
         Grid Ceiling Systems
@@ -475,7 +665,9 @@ footer {
 
     <div class="card">
 
-      <div class="icon">▥</div>
+      <div class="icon">
+        ▥
+      </div>
 
       <h3>
         Partition Systems
@@ -492,7 +684,9 @@ footer {
 
     <div class="card">
 
-      <div class="icon">◈</div>
+      <div class="icon">
+        ◈
+      </div>
 
       <h3>
         Ceiling Sections & Frames
@@ -509,7 +703,9 @@ footer {
 
     <div class="card">
 
-      <div class="icon">◆</div>
+      <div class="icon">
+        ◆
+      </div>
 
       <h3>
         Gypsum Boards
@@ -526,7 +722,9 @@ footer {
 
     <div class="card">
 
-      <div class="icon">★</div>
+      <div class="icon">
+        ▰
+      </div>
 
       <h3>
         Wholesale Supply
@@ -550,35 +748,39 @@ footer {
      ABOUT
 ========================= -->
 
-<section id="about" class="about">
+<section
+  id="about"
+  class="about"
+>
 
-  <div class="title">
+  <div class="about-photo">
+  </div>
+
+
+  <div class="about-copy">
+
+    <div class="eyebrow">
+      ABOUT US
+    </div>
+
 
     <h2>
       Padmavati Ceiling Impex
     </h2>
 
+
+    <p>
+      We supply gypsum ceiling, grid ceiling
+      and partition system products with a
+      focus on dependable materials and
+      wholesale service.
+
+      Our goal is to provide practical ceiling
+      and partition solutions for contractors,
+      builders, interior professionals and projects.
+    </p>
+
   </div>
-
-
-  <p
-    style="
-      max-width:850px;
-      margin:auto;
-      text-align:center;
-      color:#555;
-    "
-  >
-
-    We supply gypsum ceiling, grid ceiling and
-    partition system products with a focus on
-    dependable materials and wholesale service.
-
-    Our goal is to provide practical ceiling and
-    partition solutions for contractors, builders,
-    interior professionals and projects.
-
-  </p>
 
 </section>
 
@@ -588,9 +790,16 @@ footer {
      CONTACT
 ========================= -->
 
-<section id="contact" class="contact">
+<section
+  id="contact"
+  class="contact"
+>
 
-  <div class="title">
+  <div class="section-head">
+
+    <div class="eyebrow">
+      GET IN TOUCH
+    </div>
 
     <h2>
       Contact Padmavati Ceiling Impex
@@ -604,10 +813,10 @@ footer {
   </div>
 
 
-  <div class="grid">
+  <div class="contact-grid">
 
 
-    <div class="card">
+    <div class="contact-card">
 
       <h3>
         Visit Our Shop
@@ -629,7 +838,7 @@ footer {
 
 
 
-    <div class="card">
+    <div class="contact-card">
 
       <h3>
         Call / WhatsApp
@@ -639,13 +848,12 @@ footer {
         8122668792
       </p>
 
-      <br>
 
       <a
         class="btn"
         href="https://wa.me/918122668792"
       >
-        WhatsApp Us
+        WhatsApp Us →
       </a>
 
     </div>
@@ -670,4 +878,4 @@ footer {
 
 
 </body>
-</html>
+     </html>
