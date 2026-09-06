@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Padmavati Ceiling Impex | Gypsum Ceiling & Partition Systems</title>
 
-<meta name="description"
-content="Padmavati Ceiling Impex - Gypsum ceiling, grid ceiling and partition system materials for contractors, builders and interior professionals.">
+<meta name="description" content="Padmavati Ceiling Impex - Gypsum ceiling, grid ceiling and partition system materials for contractors, builders and interior professionals.">
 
 <style>
 
-/* RESET */
+/* ==============================
+   RESET
+================================ */
+
 *{
-  box-sizing:border-box;
   margin:0;
   padding:0;
+  box-sizing:border-box;
 }
 
 html{
@@ -34,19 +37,21 @@ a{
 }
 
 
-/* =========================
+/* ==============================
    HEADER
-========================= */
+================================ */
 
 header{
+  height:92px;
+  padding:8px 5%;
   background:#0c0c0c;
-  color:#fff;
-  min-height:92px;
-  padding:10px 5%;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  border-bottom:1px solid #3d321e;
+  border-bottom:1px solid #3b301d;
+  position:sticky;
+  top:0;
+  z-index:1000;
 }
 
 
@@ -55,7 +60,7 @@ header{
 .logo{
   display:flex;
   align-items:center;
-  width:370px;
+  width:300px;
   height:72px;
   overflow:hidden;
 }
@@ -63,13 +68,13 @@ header{
 .logo img{
   display:block;
   width:auto;
-  height:66px;
-  max-width:360px;
+  height:64px;
+  max-width:295px;
   object-fit:contain;
 }
 
 
-/* NAVIGATION */
+/* NAV */
 
 nav{
   display:flex;
@@ -79,7 +84,7 @@ nav{
 
 nav a{
   color:#fff;
-  font-size:15px;
+  font-size:14px;
   font-weight:600;
 }
 
@@ -88,35 +93,36 @@ nav a:hover{
 }
 
 
-/* =========================
+/* ==============================
    HERO
-========================= */
+================================ */
 
 .hero{
   min-height:540px;
   padding:85px 6%;
   display:flex;
   align-items:center;
-  color:white;
+  color:#fff;
 
   background:
-  linear-gradient(
-    90deg,
-    rgba(8,8,8,.98) 0%,
-    rgba(25,22,16,.95) 50%,
-    rgba(55,42,20,.72) 100%
+  radial-gradient(
+    circle at 85% 50%,
+    #6e5b3b 0%,
+    #383021 25%,
+    #1b1915 55%,
+    #0c0c0c 100%
   );
 }
 
 .hero-inner{
-  max-width:700px;
+  max-width:760px;
 }
 
 .kicker{
-  letter-spacing:7px;
-  font-size:13px;
   color:#e0b653;
+  font-size:12px;
   font-weight:700;
+  letter-spacing:6px;
   margin-bottom:18px;
 }
 
@@ -131,9 +137,9 @@ nav a:hover{
 }
 
 .hero p{
-  font-size:19px;
+  max-width:680px;
   color:#ddd;
-  max-width:650px;
+  font-size:18px;
   margin-bottom:30px;
 }
 
@@ -148,15 +154,24 @@ nav a:hover{
 
 .btn{
   display:inline-block;
-  padding:14px 25px;
-  border-radius:7px;
+  padding:14px 24px;
   background:#e1b34f;
   color:#111;
+  border-radius:7px;
   font-weight:700;
+  font-size:14px;
+}
+
+.btn:hover{
+  background:#f0c765;
 }
 
 .btn.light{
   background:#fff;
+}
+
+.btn.light:hover{
+  background:#eee;
 }
 
 
@@ -164,26 +179,26 @@ nav a:hover{
 
 .trust{
   display:flex;
-  gap:38px;
+  gap:40px;
   margin-top:42px;
   flex-wrap:wrap;
 }
 
-.trust div{
-  color:#eee;
-  font-size:14px;
+.trust-item{
+  color:#ddd;
+  font-size:13px;
 }
 
-.trust strong{
+.trust-item strong{
   display:block;
   color:#e2b653;
   font-size:20px;
 }
 
 
-/* =========================
-   GENERAL SECTIONS
-========================= */
+/* ==============================
+   COMMON SECTION
+================================ */
 
 section{
   padding:78px 5%;
@@ -197,11 +212,11 @@ section{
 }
 
 .eyebrow{
-  letter-spacing:5px;
-  font-size:12px;
-  font-weight:700;
   color:#a77b29;
-  margin-bottom:8px;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:5px;
+  margin-bottom:9px;
 }
 
 .section-head h2{
@@ -215,9 +230,9 @@ section{
 }
 
 
-/* =========================
+/* ==============================
    PRODUCTS
-========================= */
+================================ */
 
 .products{
   background:#f7f6f2;
@@ -225,78 +240,144 @@ section{
 
 .product-grid{
   display:grid;
-  grid-template-columns:
-  repeat(3,1fr);
+  grid-template-columns:repeat(3,1fr);
   gap:20px;
 }
 
 .card{
   background:#fff;
   padding:30px;
+  border:1px solid #eee;
   border-radius:12px;
+
   box-shadow:
   0 8px 25px rgba(0,0,0,.07);
-  border:1px solid #eee;
+
   transition:.2s;
 }
 
 .card:hover{
-  transform:translateY(-3px);
+  transform:translateY(-4px);
+
+  box-shadow:
+  0 14px 32px rgba(0,0,0,.11);
 }
 
 .icon{
   width:52px;
   height:52px;
+
   border-radius:50%;
+
   background:#f8e8c7;
 
   display:flex;
   align-items:center;
   justify-content:center;
 
-  font-size:24px;
+  font-size:23px;
+
   margin-bottom:18px;
 }
 
 .card h3{
-  font-size:21px;
+  font-size:19px;
   margin-bottom:10px;
 }
 
 .card p{
   color:#666;
-  font-size:15px;
+  font-size:14px;
 }
 
 
-/* =========================
+/* ==============================
    ABOUT
-========================= */
+================================ */
 
 .about{
   max-width:none;
   padding:0;
 
-  background:#fff;
-
   display:grid;
   grid-template-columns:1fr 1fr;
+
+  background:#fff;
 }
 
-.about-photo{
-  min-height:420px;
+.about-visual{
+  min-height:470px;
+
+  position:relative;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  overflow:hidden;
 
   background:
-  linear-gradient(
-    135deg,
-    #15130f,
-    #8b6a32,
-    #1a1711
+  radial-gradient(
+    circle at center,
+    #bd9144 0%,
+    #745526 30%,
+    #292015 62%,
+    #0f0f0f 100%
   );
 }
 
+.gold-ring{
+  width:310px;
+  height:310px;
+
+  border-radius:50%;
+
+  border:2px solid rgba(245,210,130,.75);
+
+  box-shadow:
+  0 0 0 20px rgba(225,180,80,.06),
+  0 0 80px rgba(225,180,80,.25);
+}
+
+.about-badge{
+  position:absolute;
+
+  width:210px;
+  height:210px;
+
+  border-radius:50%;
+
+  background:#111;
+
+  border:1px solid #d8aa4e;
+
+  display:flex;
+  flex-direction:column;
+
+  align-items:center;
+  justify-content:center;
+
+  text-align:center;
+
+  box-shadow:
+  0 20px 50px rgba(0,0,0,.4);
+}
+
+.about-badge strong{
+  color:#e2b653;
+  font-size:23px;
+  letter-spacing:2px;
+}
+
+.about-badge span{
+  color:#fff;
+  font-size:9px;
+  letter-spacing:3px;
+  margin-top:4px;
+}
+
 .about-copy{
-  padding:70px 7%;
+  padding:75px 8%;
 
   display:flex;
   flex-direction:column;
@@ -304,25 +385,61 @@ section{
 }
 
 .about-copy h2{
-  font-size:40px;
-  line-height:1.2;
-  margin-bottom:20px;
+  font-size:42px;
+  line-height:1.12;
+  margin-bottom:22px;
+}
+
+.about-copy h2 span{
+  color:#c7973e;
 }
 
 .about-copy p{
-  color:#555;
+  color:#666;
+  font-size:15px;
   max-width:600px;
+  margin-bottom:13px;
+}
+
+.about-points{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:13px;
+
+  margin-top:22px;
+}
+
+.about-points div{
+  font-size:14px;
+  font-weight:600;
+}
+
+.about-points strong{
+  color:#c7973e;
+  margin-right:7px;
 }
 
 
-/* =========================
+/* ==============================
    CONTACT
-========================= */
+================================ */
 
 .contact{
   max-width:none;
-  background:#111;
+
+  background:
+  linear-gradient(
+    135deg,
+    #0d0d0d,
+    #1d1a15
+  );
+
   color:#fff;
+}
+
+.contact .section-head h2{
+  color:#fff;
+  font-size:40px;
 }
 
 .contact .section-head p{
@@ -334,35 +451,83 @@ section{
   margin:auto;
 
   display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:22px;
+  grid-template-columns:repeat(3,1fr);
+
+  gap:20px;
 }
 
 .contact-card{
   background:#fff;
   color:#222;
 
-  border-radius:12px;
+  min-height:220px;
+
+  border-radius:13px;
+
   padding:30px;
+
+  box-shadow:
+  0 12px 35px rgba(0,0,0,.25);
+
+  transition:.2s;
+}
+
+.contact-card:hover{
+  transform:translateY(-4px);
+}
+
+.contact-icon{
+  width:50px;
+  height:50px;
+
+  border-radius:50%;
+
+  background:#f7e6c1;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:21px;
+
+  margin-bottom:18px;
 }
 
 .contact-card h3{
+  font-size:20px;
   margin-bottom:10px;
-  font-size:21px;
 }
 
 .contact-card p{
   color:#666;
+  font-size:14px;
 }
 
-.contact-card .btn{
-  margin-top:20px;
+.contact-btn{
+  display:inline-block;
+
+  margin-top:18px;
+
+  padding:11px 18px;
+
+  background:#dcae48;
+
+  color:#111;
+
+  border-radius:6px;
+
+  font-size:13px;
+  font-weight:700;
+}
+
+.contact-btn:hover{
+  background:#c9952d;
 }
 
 
-/* =========================
+/* ==============================
    FOOTER
-========================= */
+================================ */
 
 footer{
   background:#080808;
@@ -370,30 +535,59 @@ footer{
 
   text-align:center;
 
-  padding:25px;
+  padding:38px 20px;
+}
 
-  font-size:13px;
+.footer-logo{
+  display:flex;
+  justify-content:center;
+  margin-bottom:10px;
+}
+
+.footer-logo img{
+  height:55px;
+  width:auto;
+  max-width:230px;
+  object-fit:contain;
+}
+
+.footer-tagline{
+  color:#d7b25e;
+  font-size:11px;
+  letter-spacing:2px;
+}
+
+.footer-line{
+  width:80px;
+  height:1px;
+  background:#9d7730;
+  margin:20px auto;
+}
+
+.copyright{
+  color:#777;
+  font-size:12px;
 }
 
 
-/* =========================
+/* ==============================
    TABLET
-========================= */
+================================ */
 
 @media(max-width:900px){
 
   header{
-    min-height:82px;
+    height:82px;
   }
 
   .logo{
-    width:290px;
+    width:270px;
     height:64px;
   }
 
   .logo img{
     height:58px;
-    max-width:285px;
+    max-width:265px;
   }
 
   nav{
@@ -412,31 +606,35 @@ footer{
     grid-template-columns:1fr;
   }
 
-  .about-photo{
-    min-height:280px;
+  .about-visual{
+    min-height:350px;
+  }
+
+  .contact-grid{
+    grid-template-columns:1fr 1fr;
   }
 
 }
 
 
-/* =========================
+/* ==============================
    MOBILE
-========================= */
+================================ */
 
 @media(max-width:600px){
 
   header{
-    min-height:76px;
+    height:76px;
     padding:7px 5%;
   }
 
   /*
-     PERFECT MOBILE LOGO SIZE
+     BALANCED MOBILE LOGO
   */
 
   .logo{
     width:205px;
-    height:55px;
+    height:56px;
   }
 
   .logo img{
@@ -451,6 +649,9 @@ footer{
   nav a{
     font-size:11px;
   }
+
+
+  /* HERO */
 
   .hero{
     min-height:510px;
@@ -470,6 +671,13 @@ footer{
     margin-top:30px;
   }
 
+  .trust-item{
+    font-size:11px;
+  }
+
+
+  /* SECTIONS */
+
   section{
     padding:55px 5%;
   }
@@ -478,26 +686,108 @@ footer{
     font-size:32px;
   }
 
+
+  /* PRODUCTS */
+
   .product-grid{
     grid-template-columns:1fr;
+  }
+
+
+  /* ABOUT */
+
+  .about-visual{
+    min-height:300px;
+  }
+
+  .gold-ring{
+    width:230px;
+    height:230px;
+  }
+
+  .about-badge{
+    width:160px;
+    height:160px;
+  }
+
+  .about-badge strong{
+    font-size:18px;
+  }
+
+  .about-badge span{
+    font-size:7px;
+  }
+
+  .about-copy{
+    padding:50px 7%;
+  }
+
+  .about-copy h2{
+    font-size:34px;
+  }
+
+  .about-points{
+    grid-template-columns:1fr;
+  }
+
+
+  /* CONTACT */
+
+  .contact .section-head h2{
+    font-size:32px;
   }
 
   .contact-grid{
     grid-template-columns:1fr;
   }
 
+  .contact-card{
+    min-height:auto;
+  }
+
+}
+
+
+/* ==============================
+   SMALL PHONES
+================================ */
+
+@media(max-width:380px){
+
+  .logo{
+    width:175px;
+  }
+
+  .logo img{
+    height:44px;
+    max-width:170px;
+  }
+
+  nav{
+    gap:7px;
+  }
+
+  nav a{
+    font-size:10px;
+  }
+
+  .hero h1{
+    font-size:34px;
+  }
+
 }
 
 </style>
+
 </head>
 
 
 <body>
 
 
-<!-- =========================
+<!-- =================================
      HEADER
-========================= -->
+================================= -->
 
 <header>
 
@@ -513,11 +803,17 @@ footer{
 
   <nav>
 
-    <a href="#products">Products</a>
+    <a href="#products">
+      Products
+    </a>
 
-    <a href="#about">About</a>
+    <a href="#about">
+      About
+    </a>
 
-    <a href="#contact">Contact</a>
+    <a href="#contact">
+      Contact
+    </a>
 
   </nav>
 
@@ -525,9 +821,9 @@ footer{
 
 
 
-<!-- =========================
+<!-- =================================
      HERO
-========================= -->
+================================= -->
 
 <section class="hero">
 
@@ -573,17 +869,19 @@ footer{
 
     <div class="trust">
 
-      <div>
+      <div class="trust-item">
         <strong>✓</strong>
         Quality Products
       </div>
 
-      <div>
+
+      <div class="trust-item">
         <strong>▣</strong>
         Wholesale Supply
       </div>
 
-      <div>
+
+      <div class="trust-item">
         <strong>★</strong>
         Trusted Service
       </div>
@@ -596,9 +894,9 @@ footer{
 
 
 
-<!-- =========================
+<!-- =================================
      PRODUCTS
-========================= -->
+================================= -->
 
 <section
   id="products"
@@ -744,41 +1042,88 @@ footer{
 
 
 
-<!-- =========================
+<!-- =================================
      ABOUT
-========================= -->
+================================= -->
 
 <section
   id="about"
   class="about"
 >
 
-  <div class="about-photo">
+
+  <div class="about-visual">
+
+    <div class="gold-ring"></div>
+
+
+    <div class="about-badge">
+
+      <strong>
+        PADMAVATI
+      </strong>
+
+      <span>
+        CEILING IMPEX
+      </span>
+
+    </div>
+
   </div>
+
 
 
   <div class="about-copy">
 
     <div class="eyebrow">
-      ABOUT US
+      ABOUT PADMAVATI
     </div>
 
 
     <h2>
-      Padmavati Ceiling Impex
+      Building Better
+      <span>Interior Spaces</span>
     </h2>
 
 
     <p>
-      We supply gypsum ceiling, grid ceiling
-      and partition system products with a
-      focus on dependable materials and
-      wholesale service.
-
-      Our goal is to provide practical ceiling
-      and partition solutions for contractors,
-      builders, interior professionals and projects.
+      Padmavati Ceiling Impex is a wholesale
+      supplier of gypsum ceiling, grid ceiling
+      and partition system materials.
     </p>
+
+
+    <p>
+      We support contractors, builders, interior
+      professionals, dealers and project
+      requirements with dependable products
+      and professional service.
+    </p>
+
+
+    <div class="about-points">
+
+      <div>
+        <strong>✓</strong>
+        Quality Materials
+      </div>
+
+      <div>
+        <strong>✓</strong>
+        Wholesale Supply
+      </div>
+
+      <div>
+        <strong>✓</strong>
+        Professional Support
+      </div>
+
+      <div>
+        <strong>✓</strong>
+        Project Solutions
+      </div>
+
+    </div>
 
   </div>
 
@@ -786,28 +1131,29 @@ footer{
 
 
 
-<!-- =========================
+<!-- =================================
      CONTACT
-========================= -->
+================================= -->
 
 <section
   id="contact"
   class="contact"
 >
 
+
   <div class="section-head">
 
     <div class="eyebrow">
-      GET IN TOUCH
+      CONTACT US
     </div>
 
     <h2>
-      Contact Padmavati Ceiling Impex
+      Let's Build Something Better
     </h2>
 
     <p>
-      Get in touch for product enquiries
-      and wholesale orders.
+      Contact us for product enquiries,
+      wholesale orders and project requirements.
     </p>
 
   </div>
@@ -816,32 +1162,39 @@ footer{
   <div class="contact-grid">
 
 
+    <!-- SHOP -->
+
     <div class="contact-card">
+
+      <div class="contact-icon">
+        📍
+      </div>
 
       <h3>
         Visit Our Shop
       </h3>
 
       <p>
-
-        No. 41, West Side,
-        Bharathy Nagar 3rd Street,
-
-        <br>
-
-        Maduravoyal,
+        No. 41, West Side,<br>
+        Bharathy Nagar 3rd Street,<br>
+        Maduravoyal,<br>
         Chennai – 600095
-
       </p>
 
     </div>
 
 
 
+    <!-- CALL -->
+
     <div class="contact-card">
 
+      <div class="contact-icon">
+        📞
+      </div>
+
       <h3>
-        Call / WhatsApp
+        Call Us
       </h3>
 
       <p>
@@ -850,8 +1203,37 @@ footer{
 
 
       <a
-        class="btn"
+        class="contact-btn"
+        href="tel:8122668792"
+      >
+        Call Now →
+      </a>
+
+    </div>
+
+
+
+    <!-- WHATSAPP -->
+
+    <div class="contact-card">
+
+      <div class="contact-icon">
+        💬
+      </div>
+
+      <h3>
+        WhatsApp
+      </h3>
+
+      <p>
+        8122668792
+      </p>
+
+
+      <a
+        class="contact-btn"
         href="https://wa.me/918122668792"
+        target="_blank"
       >
         WhatsApp Us →
       </a>
@@ -865,17 +1247,39 @@ footer{
 
 
 
-<!-- =========================
+<!-- =================================
      FOOTER
-========================= -->
+================================= -->
 
 <footer>
 
-  © 2026 Padmavati Ceiling Impex
-  · Gypsum Ceiling & Partition Systems
+
+  <div class="footer-logo">
+
+    <img
+      src="https://raw.githubusercontent.com/padmavaticeilingimpex/padmavaticeilingimpex.github.io/main/211956-Picsart-BackgroundRemover.png"
+      alt="Padmavati Ceiling Impex"
+    >
+
+  </div>
+
+
+  <div class="footer-tagline">
+    GYPSUM CEILING & PARTITION SYSTEMS
+  </div>
+
+
+  <div class="footer-line"></div>
+
+
+  <div class="copyright">
+    © 2026 Padmavati Ceiling Impex.
+    All Rights Reserved.
+  </div>
+
 
 </footer>
 
 
 </body>
-     </html>
+  </html>
