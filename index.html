@@ -36,13 +36,38 @@ footer{background:#0b0b0b;color:#aaa;text-align:center;padding:25px 6%;font-size
 nav{width:100%}
 nav a{margin:0 6px}
 }
-</style>
+</style>.logo{
+  display:flex;
+  align-items:center;
+  height:44px;
+  width:auto;
+  overflow:hidden;
+}
+
+.logo img{
+  display:block;
+  height:38px !important;
+  width:auto !important;
+  max-width:160px !important;
+  object-fit:contain;
+}
+
+@media(max-width:700px){
+  .logo{
+    height:38px;
+  }
+
+  .logo img{
+    height:32px !important;
+    max-width:135px !important;
+  }
+}
 </head>
 
 <body>
 
 <header>
-<div class=".logo{
+<div class="logo">
   display:flex;
   align-items:center;
   height:42px;
