@@ -2,26 +2,22 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>
-Padmavati Ceiling Impex | Gypsum Ceiling & Partition Systems
-</title>
+<title>Padmavati Ceiling Impex | Gypsum Ceiling & Partition Systems</title>
 
-<meta name="description"
-content="Padmavati Ceiling Impex - Gypsum Ceiling, Grid Ceiling and Partition System products in Chennai. Wholesale supply for contractors, builders and interior professionals.">
+<meta name="description" content="Padmavati Ceiling Impex - Gypsum Ceiling & Partition Systems in Chennai.">
 
 <style>
-
 :root{
-  --gold:#e5b84f;
-  --gold2:#c99432;
-  --black:#0b0b0b;
-  --dark:#151512;
-  --cream:#f7f6f2;
-  --text:#1b1b19;
-  --muted:#6b6b66;
+  --navy:#071a2d;
+  --navy2:#0d2c49;
+  --gold:#d6a63a;
+  --gold-light:#f4d27a;
+  --cream:#f7f4ec;
+  --white:#ffffff;
+  --text:#17283a;
+  --muted:#647180;
 }
 
 *{
@@ -32,1360 +28,1358 @@ content="Padmavati Ceiling Impex - Gypsum Ceiling, Grid Ceiling and Partition Sy
 
 html{
   scroll-behavior:smooth;
-  overflow-x:hidden;
 }
 
 body{
   font-family:Arial,Helvetica,sans-serif;
-  background:var(--cream);
   color:var(--text);
-  line-height:1.6;
+  background:var(--cream);
   overflow-x:hidden;
-  width:100%;
 }
 
-/* =========================
-   HEADER
-========================= */
+a{
+  text-decoration:none;
+  color:inherit;
+}
 
-header{
-  width:100%;
-  background:#0b0b0b;
-  border-bottom:1px solid rgba(229,184,79,.25);
+img{
+  max-width:100%;
+  display:block;
+}
 
-  padding:16px 5%;
+/* HEADER */
 
+.header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:#071a2d;
+  border-bottom:1px solid rgba(214,166,58,.5);
+  box-shadow:0 8px 25px rgba(0,0,0,.18);
+}
+
+.nav{
+  max-width:1240px;
+  margin:auto;
+  padding:12px 22px;
+  min-height:78px;
   display:flex;
   align-items:center;
   justify-content:space-between;
-
-  gap:20px;
-
-  min-height:105px;
-
-  position:sticky;
-  top:0;
-  z-index:20;
+  gap:25px;
 }
 
 .logo{
-  display:flex;
-  align-items:center;
-  flex:0 1 auto;
-  min-width:0;
-}
-
-.logo img{
-  display:block;
-
   width:285px;
-  max-width:100%;
-
   height:auto;
-
-  max-height:72px;
-
-  object-fit:contain;
 }
 
-nav{
+.navlinks{
   display:flex;
   align-items:center;
-  justify-content:flex-end;
-
-  gap:26px;
-
-  flex-shrink:0;
-}
-
-nav a{
-  color:#fff;
-  text-decoration:none;
-
-  font-size:16px;
+  gap:28px;
+  color:white;
   font-weight:700;
-
-  white-space:nowrap;
-
-  transition:.2s;
 }
 
-nav a:hover{
-  color:var(--gold);
+.navlinks a{
+  padding:10px 4px;
 }
 
+.navlinks a:hover{
+  color:var(--gold-light);
+}
 
-/* =========================
-   HERO
-========================= */
+.navcta{
+  background:linear-gradient(135deg,var(--gold-light),var(--gold));
+  color:#071a2d !important;
+  padding:11px 17px !important;
+  border-radius:7px;
+}
+
+/* HERO */
 
 .hero{
-
-  width:100%;
-
+  min-height:650px;
+  display:flex;
+  align-items:center;
   background:
-    radial-gradient(
-      circle at 80% 45%,
-      rgba(210,164,73,.28),
-      transparent 35%
-    ),
-
-    linear-gradient(
-      115deg,
-      #0c0c0b 0%,
-      #14130f 55%,
-      #312a1c 100%
-    );
-
-  color:#fff;
-
-  padding:115px 6% 105px;
+    radial-gradient(circle at 80% 20%,rgba(214,166,58,.18),transparent 28%),
+    linear-gradient(120deg,#050d16,#0a2036 52%,#142f48);
+  color:white;
 }
 
 .hero-inner{
-  width:100%;
-  max-width:950px;
+  width:min(1180px,92%);
+  margin:auto;
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:50px;
+  align-items:center;
+  padding:75px 0;
 }
 
 .eyebrow{
-
-  color:var(--gold);
-
-  font-size:13px;
-
-  letter-spacing:7px;
-
-  font-weight:700;
-
-  margin-bottom:25px;
+  color:var(--gold-light);
+  font-size:14px;
+  letter-spacing:3px;
+  font-weight:800;
+  margin-bottom:15px;
 }
 
 .hero h1{
-
-  font-size:clamp(44px,6vw,78px);
-
+  font-size:clamp(42px,6vw,72px);
   line-height:1.02;
-
   letter-spacing:-2px;
-
-  max-width:900px;
+  margin-bottom:22px;
 }
 
 .hero h1 span{
-  color:var(--gold);
+  color:var(--gold-light);
 }
 
 .hero p{
-
-  font-size:20px;
-
-  color:#ddd;
-
-  max-width:700px;
-
-  margin:28px 0 32px;
+  font-size:18px;
+  line-height:1.7;
+  color:#dce5ec;
+  max-width:680px;
 }
 
-
-/* =========================
-   BUTTONS
-========================= */
+.buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:13px;
+  margin:30px 0;
+}
 
 .btn{
-
   display:inline-flex;
-
   align-items:center;
-
   justify-content:center;
-
-  padding:15px 25px;
-
-  border-radius:8px;
-
-  text-decoration:none;
-
-  font-weight:700;
-
-  margin-right:10px;
-
-  transition:.2s;
+  padding:14px 22px;
+  border-radius:7px;
+  font-weight:800;
+  border:1px solid transparent;
 }
 
-.btn.gold{
-
+.btn-gold{
   background:var(--gold);
-
-  color:#111;
+  color:#081a2b;
 }
 
-.btn.light{
-
-  background:#fff;
-
-  color:#111;
+.btn-white{
+  background:white;
+  color:#081a2b;
 }
-
-.btn:hover{
-  transform:translateY(-2px);
-}
-
-
-/* =========================
-   TRUST ITEMS
-========================= */
 
 .trust{
-
   display:flex;
-
-  gap:55px;
-
-  margin-top:42px;
-
   flex-wrap:wrap;
+  gap:12px;
+  margin-top:24px;
 }
 
-.trust-item{
-
-  display:flex;
-
-  flex-direction:column;
-
-  gap:4px;
-
-  color:#ddd;
-
-  font-size:14px;
-}
-
-.trust-item .symbol{
-
-  color:var(--gold);
-
-  font-size:27px;
-
-  line-height:1;
-}
-
-
-/* =========================
-   SECTIONS
-========================= */
-
-section{
-
-  width:100%;
-
-  padding:85px 6%;
-}
-
-
-/* =========================
-   PRODUCTS
-========================= */
-
-.products{
-  background:#f7f6f2;
-}
-
-.section-head{
-
-  text-align:center;
-
-  margin-bottom:45px;
-}
-
-.section-head .eyebrow{
-
-  font-size:11px;
-
-  margin-bottom:8px;
-}
-
-.section-head h2{
-
-  font-size:40px;
-
-  line-height:1.1;
-}
-
-.section-head p{
-
-  color:#777;
-
-  margin-top:8px;
-}
-
-.grid{
-
-  display:grid;
-
-  grid-template-columns:
-    repeat(3,minmax(0,1fr));
-
-  gap:22px;
-
-  width:100%;
-
-  max-width:1150px;
-
-  margin:auto;
-}
-
-.card{
-
-  background:#fff;
-
-  border:1px solid #eee;
-
-  border-radius:12px;
-
-  padding:30px;
-
-  box-shadow:
-    0 8px 28px rgba(0,0,0,.06);
-
-  min-width:0;
-}
-
-.product-icon{
-
-  width:40px;
-  height:40px;
-
-  border-radius:50%;
-
-  background:#f7e7c0;
-
-  display:flex;
-
-  align-items:center;
-  justify-content:center;
-
-  margin-bottom:20px;
-
-  color:#111;
-
-  font-weight:bold;
-}
-
-.card h3{
-
-  font-size:17px;
-
-  margin-bottom:9px;
-}
-
-.card p{
-
-  font-size:14px;
-
-  color:#73736e;
-}
-
-
-/* =========================
-   ABOUT
-========================= */
-
-.about{
-
-  padding:0;
-
-  background:#fff;
-}
-
-.about-wrap{
-
-  display:grid;
-
-  grid-template-columns:1fr 1fr;
-
-  min-height:430px;
-}
-
-.about-visual{
-
-  background:
-
-    radial-gradient(
-      circle at 40% 45%,
-      #d1a24d 0,
-      #76531f 28%,
-      #211b12 75%,
-      #121210 100%
-    );
-}
-
-.about-copy{
-
-  padding:70px 8%;
-
-  display:flex;
-
-  flex-direction:column;
-
-  justify-content:center;
-}
-
-.about-copy .eyebrow{
-
-  font-size:11px;
-
-  margin-bottom:10px;
-}
-
-.about-copy h2{
-
-  font-size:42px;
-
-  line-height:1.1;
-
-  margin-bottom:20px;
-}
-
-.about-copy p{
-
-  color:#666;
-
-  max-width:600px;
-}
-
-
-/* =========================
-   CONTACT
-========================= */
-
-.contact{
-
-  background:#111;
-
-  color:#fff;
-}
-
-.contact .section-head h2{
-  color:#fff;
-}
-
-.contact .section-head p{
-  color:#999;
-}
-
-.contact-grid{
-
-  display:grid;
-
-  grid-template-columns:
-    1.2fr .8fr;
-
-  gap:22px;
-
-  width:100%;
-
-  max-width:1150px;
-
-  margin:auto;
-}
-
-.contact-card{
-
-  background:#fff;
-
-  color:#222;
-
-  border-radius:12px;
-
-  overflow:hidden;
-
-  min-width:0;
-}
-
-.contact-info{
-
-  padding:30px;
-}
-
-.contact-info h3{
-
-  margin-bottom:12px;
-
-  font-size:22px;
-}
-
-.address{
-
-  color:#666;
-
-  font-size:14px;
-
-  margin-bottom:18px;
-}
-
-
-/* =========================
-   GOOGLE MAP
-========================= */
-
-.map{
-
-  width:100%;
-
-  height:300px;
-
-  border:0;
-
-  display:block;
-}
-
-.map-link{
-
-  display:inline-flex;
-
-  margin-top:12px;
-
-  background:#111;
-
-  color:#fff;
-
-  padding:12px 16px;
-
-  border-radius:7px;
-
-  text-decoration:none;
-
-  font-weight:700;
-}
-
-.map-link:hover{
-  background:#2b2b2b;
-}
-
-
-/* =========================
-   WHATSAPP
-========================= */
-
-.whatsapp{
-
-  display:inline-flex;
-
-  margin-top:15px;
-
-  background:var(--gold);
-
-  color:#111;
-
-  padding:13px 18px;
-
-  border-radius:7px;
-
-  text-decoration:none;
-
-  font-weight:700;
-}
-
-.whatsapp:hover{
-  background:#f1ca64;
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-footer{
-
-  width:100%;
-
-  background:#080808;
-
-  color:#888;
-
-  text-align:center;
-
-  padding:24px;
-
+.trust span{
+  border:1px solid rgba(255,255,255,.18);
+  padding:10px 13px;
+  border-radius:999px;
+  color:#e8eef3;
   font-size:13px;
 }
 
+.hero-visual{
+  min-height:450px;
+  border:1px solid rgba(214,166,58,.55);
+  border-radius:18px;
+  padding:18px;
+  background:rgba(255,255,255,.05);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
 
-/* =========================
-   TABLET
-========================= */
+.hero-visual img{
+  width:100%;
+  max-height:510px;
+  object-fit:contain;
+  border-radius:10px;
+}
 
-@media(max-width:900px){
+/* SECTIONS */
 
-  header{
+.section{
+  padding:82px 0;
+}
 
-    padding:14px 5%;
+.container{
+  width:min(1180px,92%);
+  margin:auto;
+}
 
-    min-height:90px;
+.section-head{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.section-head .eyebrow{
+  color:#a97b1e;
+}
+
+.section-head h2{
+  font-size:42px;
+  color:var(--navy);
+  margin-bottom:12px;
+}
+
+.section-head p{
+  color:var(--muted);
+  max-width:720px;
+  margin:auto;
+  line-height:1.7;
+}
+
+/* PRODUCTS */
+
+.products{
+  background:#fff;
+}
+
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.card{
+  background:white;
+  border:1px solid #e6dfcf;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 10px 28px rgba(8,28,48,.07);
+  transition:.25s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 18px 38px rgba(8,28,48,.14);
+  border-color:#d8b45c;
+}
+
+.card-img{
+  aspect-ratio:1/1;
+  overflow:hidden;
+  background:#eef1f3;
+}
+
+.card-img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.card-body{
+  padding:18px;
+}
+
+.card h3{
+  font-size:19px;
+  color:var(--navy);
+  margin-bottom:8px;
+}
+
+.card p{
+  font-size:14px;
+  color:var(--muted);
+  line-height:1.55;
+  margin-bottom:15px;
+}
+
+.card-link{
+  font-weight:800;
+  color:#a67516;
+  font-size:14px;
+}
+
+/* ABOUT */
+
+.about{
+  background:linear-gradient(120deg,#f5f1e6,#fff);
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:45px;
+  align-items:center;
+}
+
+.about-visual{
+  min-height:440px;
+  border-radius:18px;
+  overflow:hidden;
+  background:linear-gradient(145deg,#0a2036,#163d5d);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:30px;
+  border:1px solid rgba(214,166,58,.5);
+}
+
+.about-visual img{
+  max-height:390px;
+  object-fit:contain;
+}
+
+.about-copy h2{
+  font-size:42px;
+  color:var(--navy);
+  margin:8px 0 18px;
+}
+
+.about-copy p{
+  line-height:1.8;
+  color:#5e6872;
+  margin-bottom:16px;
+}
+
+.points{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:13px;
+  margin-top:22px;
+}
+
+.point{
+  padding:16px;
+  border:1px solid #e6dfcf;
+  background:white;
+  border-radius:10px;
+  font-weight:800;
+  color:var(--navy);
+}
+
+.point b{
+  color:var(--gold);
+  margin-right:7px;
+}
+
+/* CONTACT */
+
+.contact{
+  background:linear-gradient(120deg,#061525,#0d2e4c);
+  color:white;
+}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+.contact h2{
+  font-size:42px;
+  margin-bottom:14px;
+}
+
+.contact p{
+  color:#d6e0e7;
+  line-height:1.7;
+}
+
+.contact-card{
+  margin-top:25px;
+  padding:24px;
+  border:1px solid rgba(214,166,58,.45);
+  border-radius:14px;
+  background:rgba(255,255,255,.055);
+}
+
+.contact-card h3{
+  color:var(--gold-light);
+  margin-bottom:12px;
+}
+
+.contact-line{
+  margin:12px 0;
+  color:#e9eef2;
+  line-height:1.6;
+}
+
+.contact-line strong{
+  color:white;
+}
+
+.map-wrap{
+  border-radius:16px;
+  overflow:hidden;
+  min-height:430px;
+  border:1px solid rgba(214,166,58,.45);
+}
+
+.map-wrap iframe{
+  width:100%;
+  height:100%;
+  min-height:430px;
+  border:0;
+}
+
+/* FOOTER */
+
+.footer{
+  background:#040d16;
+  color:#bfcbd5;
+  text-align:center;
+  padding:25px 15px;
+  border-top:1px solid rgba(214,166,58,.35);
+}
+
+.footer strong{
+  color:var(--gold-light);
+}
+
+/* WHATSAPP */
+
+.float-wa{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  z-index:999;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  background:#16b957;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:25px;
+  font-weight:900;
+  box-shadow:0 10px 30px rgba(0,0,0,.28);
+}
+
+/* TABLET */
+
+@media(max-width:1000px){
+
+  .product-grid{
+    grid-template-columns:repeat(3,1fr);
   }
 
-  .logo img{
-
-    width:250px;
-
-    max-height:62px;
-  }
-
-  nav{
-
-    gap:18px;
-  }
-
-  nav a{
-
-    font-size:14px;
-  }
-
-  .grid{
-
-    grid-template-columns:
-      repeat(2,1fr);
-  }
-
-  .contact-grid{
-
+  .hero-inner{
     grid-template-columns:1fr;
   }
 
-  .hero{
+}
 
-    padding:90px 6%;
+/* MOBILE */
+
+@media(max-width:720px){
+
+  .nav{
+    min-height:70px;
+    padding:9px 14px;
   }
 
-  .about-wrap{
+  .logo{
+    width:220px;
+  }
 
+  .navlinks{
+    gap:8px;
+    font-size:13px;
+  }
+
+  .navlinks a:not(.navcta){
+    display:none;
+  }
+
+  .navcta{
+    padding:9px 12px !important;
+  }
+
+  .hero-inner{
+    padding:55px 0 65px;
+    gap:28px;
+  }
+
+  .hero h1{
+    font-size:43px;
+    letter-spacing:-1px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  .hero-visual{
+    min-height:280px;
+    padding:10px;
+  }
+
+  .section{
+    padding:60px 0;
+  }
+
+  .section-head h2,
+  .about-copy h2,
+  .contact h2{
+    font-size:34px;
+  }
+
+  .product-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:13px;
+  }
+
+  .card-body{
+    padding:14px;
+  }
+
+  .card h3{
+    font-size:16px;
+  }
+
+  .card p{
+    font-size:13px;
+  }
+
+  .about-grid,
+  .contact-grid{
     grid-template-columns:1fr;
   }
 
   .about-visual{
+    min-height:300px;
+  }
 
-    min-height:260px;
+  .points{
+    grid-template-columns:1fr;
+  }
+
+  .map-wrap,
+  .map-wrap iframe{
+    min-height:330px;
   }
 
 }
 
-
-/* =========================
-   MOBILE
-========================= */
-
-@media(max-width:650px){
-
-  header{
-
-    min-height:auto;
-
-    padding:13px 16px;
-
-    gap:10px;
-  }
+@media(max-width:430px){
 
   .logo{
-
-    flex:1 1 auto;
-
-    min-width:0;
-  }
-
-  .logo img{
-
-    width:205px;
-
-    max-width:100%;
-
-    max-height:55px;
-  }
-
-  nav{
-
-    gap:10px;
-
-    flex:0 0 auto;
-  }
-
-  nav a{
-
-    font-size:12px;
-  }
-
-  .hero{
-
-    padding:75px 20px 65px;
-  }
-
-  .hero-inner{
-
-    width:100%;
-  }
-
-  .eyebrow{
-
-    font-size:11px;
-
-    letter-spacing:5px;
-
-    margin-bottom:24px;
+    width:200px;
   }
 
   .hero h1{
-
-    font-size:48px;
-
-    line-height:1.04;
-
-    letter-spacing:-1.5px;
-
-    width:100%;
-  }
-
-  .hero p{
-
-    font-size:17px;
-
-    line-height:1.8;
-
-    width:100%;
-
-    margin:27px 0 30px;
-  }
-
-  .btn{
-
-    width:100%;
-
-    margin:0 0 14px 0;
-
-    padding:15px 18px;
-
-    font-size:17px;
-  }
-
-  .trust{
-
-    gap:25px;
-
-    margin-top:30px;
-  }
-
-  section{
-
-    padding:65px 20px;
-  }
-
-  .grid{
-
-    grid-template-columns:1fr;
-
-    gap:18px;
-  }
-
-  .section-head{
-
-    margin-bottom:35px;
-  }
-
-  .section-head h2{
-
-    font-size:34px;
-  }
-
-  .about-copy{
-
-    padding:55px 25px;
-  }
-
-  .about-copy h2{
-
     font-size:36px;
   }
 
-  .contact-grid{
-
-    grid-template-columns:1fr;
-  }
-
-  .contact-info{
-
-    padding:25px;
-  }
-
-  .map{
-
-    height:280px;
-  }
-
-  footer{
-
-    padding:20px 15px;
+  .buttons .btn{
+    width:100%;
   }
 
 }
-
-
-/* =========================
-   VERY SMALL PHONES
-========================= */
-
-@media(max-width:380px){
-
-  .logo img{
-
-    width:175px;
-  }
-
-  nav{
-
-    gap:7px;
-  }
-
-  nav a{
-
-    font-size:11px;
-  }
-
-  .hero{
-
-    padding-left:18px;
-
-    padding-right:18px;
-  }
-
-  .hero h1{
-
-    font-size:42px;
-  }
-
-}
-
 </style>
-
 </head>
-
 
 <body>
 
+<header class="header">
 
-<!-- =========================
-     HEADER
-========================= -->
+<nav class="nav">
 
-<header>
+<a href="#top">
+<img
+class="logo"
+src="https://raw.githubusercontent.com/padmavaticeilingimpex/padmavaticeilingimpex.github.io/main/211956-Picsart-BackgroundRemover.png"
+alt="Padmavati Ceiling Impex">
+</a>
 
-  <a
-    class="logo"
-    href="#home"
-    aria-label="Padmavati Ceiling Impex Home"
-  >
+<div class="navlinks">
 
-    <img
-      src="https://raw.githubusercontent.com/padmavaticeilingimpex/padmavaticeilingimpex.github.io/main/211956-Picsart-BackgroundRemover.png"
-      alt="Padmavati Ceiling Impex Logo"
-    >
+<a href="#products">Products</a>
 
-  </a>
+<a href="#about">About</a>
 
+<a href="#contact">Contact</a>
 
-  <nav>
+<a
+class="navcta"
+href="https://wa.me/918122668792"
+target="_blank">
+WhatsApp
+</a>
 
-    <a href="#products">
-      Products
-    </a>
+</div>
 
-    <a href="#about">
-      About
-    </a>
-
-    <a href="#contact">
-      Contact
-    </a>
-
-  </nav>
+</nav>
 
 </header>
 
 
+<main id="top">
 
-<main id="home">
-
-
-<!-- =========================
-     HERO
-========================= -->
+<!-- HERO -->
 
 <section class="hero">
 
-  <div class="hero-inner">
+<div class="hero-inner">
+
+<div>
+
+<div class="eyebrow">
+BUILD BETTER SPACES
+</div>
+
+<h1>
+Gypsum Ceiling &amp;
+<span>Partition Systems</span>
+</h1>
+
+<p>
+Quality ceiling, drywall, partition and interior construction products
+for residential, commercial and industrial projects.
+</p>
+
+<div class="buttons">
+
+<a class="btn btn-gold" href="#products">
+View Products →
+</a>
+
+<a class="btn btn-white" href="#contact">
+Contact Us
+</a>
+
+</div>
+
+<div class="trust">
+
+<span>✓ Quality Products</span>
+<span>✓ Wholesale Supply</span>
+<span>✓ Trusted Service</span>
+
+</div>
+
+</div>
 
 
-    <div class="eyebrow">
-      BUILD BETTER SPACES
-    </div>
+<div class="hero-visual">
 
+<img
+src="https://raw.githubusercontent.com/padmavaticeilingimpex/padmavaticeilingimpex.github.io/main/211705.png"
+alt="Padmavati Ceiling Impex products">
 
-    <h1>
+</div>
 
-      Gypsum Ceiling &amp;
-
-      <span>
-        Partition Systems
-      </span>
-
-    </h1>
-
-
-    <p>
-
-      Wholesale supplier of quality ceiling and
-      partition system materials for contractors,
-      builders, interior professionals and projects.
-
-    </p>
-
-
-    <a
-      class="btn gold"
-      href="#products"
-    >
-      View Products →
-    </a>
-
-
-    <a
-      class="btn light"
-      href="#contact"
-    >
-      Contact Us
-    </a>
-
-
-    <div class="trust">
-
-
-      <div class="trust-item">
-
-        <span class="symbol">
-          ✓
-        </span>
-
-        <span>
-          Quality Products
-        </span>
-
-      </div>
-
-
-      <div class="trust-item">
-
-        <span class="symbol">
-          ▣
-        </span>
-
-        <span>
-          Wholesale Supply
-        </span>
-
-      </div>
-
-
-      <div class="trust-item">
-
-        <span class="symbol">
-          ★
-        </span>
-
-        <span>
-          Trusted Service
-        </span>
-
-      </div>
-
-
-    </div>
-
-
-  </div>
+</div>
 
 </section>
 
 
+<!-- PRODUCTS -->
 
-<!-- =========================
-     PRODUCTS
-========================= -->
+<section class="section products" id="products">
 
-<section
-  id="products"
-  class="products"
->
+<div class="container">
 
+<div class="section-head">
 
-  <div class="section-head">
+<div class="eyebrow">
+OUR PRODUCTS
+</div>
 
+<h2>
+16 Product Solutions
+</h2>
 
-    <div class="eyebrow">
-      OUR PRODUCTS
-    </div>
+<p>
+Explore our range of ceiling, partition, drywall, access and
+interior finishing products.
+</p>
 
-
-    <h2>
-      Our Products
-    </h2>
-
-
-    <p>
-      Ceiling and partition solutions for your projects
-    </p>
+</div>
 
 
-  </div>
+<div class="product-grid">
 
 
+<!-- 1 -->
 
-  <div class="grid">
+<article class="card">
 
+<div class="card-img">
 
-    <div class="card">
+<img
+src="https://raw.githubusercontent.com/padmavaticeilingimpex/padmavaticeilingimpex.github.io/main/211669.png"
+alt="Gypsum Boards">
 
-      <div class="product-icon">
-        ▦
-      </div>
+</div>
 
-      <h3>
-        Gypsum Ceiling Systems
-      </h3>
+<div class="card-body">
 
-      <p>
-        Gypsum ceiling boards and accessories
-        for modern false-ceiling applications.
-      </p>
+<h3>Gypsum Boards</h3>
 
-    </div>
+<p>
+Gypsum board solutions for ceiling and partition applications.
+</p>
 
+<a class="card-link" href="#contact">
+Enquire →
+</a>
 
+</div>
 
-    <div class="card">
-
-      <div class="product-icon">
-        ▤
-      </div>
-
-      <h3>
-        Grid Ceiling Systems
-      </h3>
-
-      <p>
-        Grid ceiling frames and tiles suitable
-        for commercial and residential projects.
-      </p>
-
-    </div>
+</article>
 
 
+<!-- 2 -->
 
-    <div class="card">
+<article class="card">
 
-      <div class="product-icon">
-        ▥
-      </div>
+<div class="card-img">
 
-      <h3>
-        Partition Systems
-      </h3>
+<img
+src="https://raw.githubusercontent.com/padmavaticeilingimpex/padmavaticeilingimpex.github.io/main/211669.png"
+alt="Gypsum Plaster">
 
-      <p>
-        Materials and framing systems for
-        gypsum partition applications.
-      </p>
+</div>
 
-    </div>
+<div class="card-body">
 
+<h3>Gypsum Plaster</h3>
 
+<p>
+Gypsum plaster products for smooth and efficient finishing work.
+</p>
 
-    <div class="card">
+<a class="card-link" href="#contact">
+Enquire →
+</a>
 
-      <div class="product-icon">
-        ◇
-      </div>
+</div>
 
-      <h3>
-        Ceiling Sections &amp; Frames
-      </h3>
-
-      <p>
-        Quality framing components and ceiling
-        sections for professional installation.
-      </p>
-
-    </div>
+</article>
 
 
+<!-- 3 -->
 
-    <div class="card">
+<article class="card">
 
-      <div class="product-icon">
-        ◆
-      </div>
+<div class="card-img">
 
-      <h3>
-        Gypsum Boards
-      </h3>
+<img
+src="https://raw.githubusercontent.com/padmavaticeilingimpex/padmavaticeilingimpex.github.io/main/211669.png"
+alt="Jointing Materials">
 
-      <p>
-        Plain gypsum boards and related ceiling
-        and partition materials.
-      </p>
+</div>
 
-    </div>
+<div class="card-body">
 
+<h3>Jointing Materials</h3>
 
+<p>
+Joint tapes, compounds and finishing materials for clean board joints.
+</p>
 
-    <div class="card">
+<a class="card-link" href="#contact">
+Enquire →
+</a>
 
-      <div class="product-icon">
-        ━
-      </div>
+</div>
 
-      <h3>
-        Wholesale Supply
-      </h3>
-
-      <p>
-        Bulk supply support for contractors,
-        dealers, builders and large projects.
-      </p>
-
-    </div>
+</article>
 
 
-  </div>
+<!-- 4 -->
+
+<article class="card">
+
+<div class="card-img">
+
+<img
+src="https://raw.githubusercontent.com/padmavaticeilingimpex/padmavaticeilingimpex.github.io/main/211834.png"
+alt="Ceiling Accessories">
+
+</div>
+
+<div class="card-body">
+
+<h3>Ceiling Accessories</h3>
+
+<p>
+Essential fixing and suspension accessories for ceiling systems.
+</p>
+
+<a class="card-link" href="#contact">
+Enquire →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- 5 -->
+
+<article class="card">
+
+<div class="card-img">
+
+<img
+src="https://raw.githubusercontent.com/padmavaticeilingimpex/padmavaticeilingimpex.github.io/main/211834.png"
+alt="Perforated Gypsum Boards">
+
+</div>
+
+<div class="card-body">
+
+<h3>Perforated Gypsum Boards</h3>
+
+<p>
+Special perforated board options for acoustic and design applications.
+</p>
+
+<a class="card-link" href="#contact">
+Enquire →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- 6 -->
+
+<article class="card">
+
+<div class="card-img">
+
+<img
+src="https://raw.githubusercontent.com/padmavaticeilingimpex/padmavaticeilingimpex.github.io/main/212287.png"
+alt="Ceiling Suspension Accessories">
+
+</div>
+
+<div class="card-body">
+
+<h3>Ceiling Suspension Accessories</h3>
+
+<p>
+Clips, hangers and fasteners for dependable ceiling installation.
+</p>
+
+<a class="card-link" href="#contact">
+Enquire →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- 7 -->
+
+<article class="card">
+
+<div class="card-img">
+
+<img
+src="https://raw.githubusercontent.com/padmavaticeilingimpex/padmavaticeilingimpex.github.io/main/212283.png"
+alt="Partition Accessories">
+
+</div>
+
+<div class="card-body">
+
+<h3>Partition Accessories</h3>
+
+<p>
+Fasteners and accessories supporting efficient drywall installation.
+</p>
+
+<a class="card-link" href="#contact">
+Enquire →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- 8 -->
+
+<article class="card">
+
+<div class="card-img">
+
+<img
+src="https://raw.githubusercontent.com/padmavaticeilingimpex/padmavaticeilingimpex.github.io/main/211715.png"
+alt="PVC Fluted Panels">
+
+</div>
+
+<div class="card-body">
+
+<h3>PVC Fluted Panels</h3>
+
+<p>
+Stylish wall and ceiling panels for modern interior spaces.
+</p>
+
+<a class="card-link" href="#contact">
+Enquire →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- 9 -->
+
+<article class="card">
+
+<div class="card-img">
+
+<img
+src="https://raw.githubusercontent.com/padmavaticeilingimpex/padmavaticeilingimpex.github.io/main/211822.png"
+alt="Floor Protection Sheets">
+
+</div>
+
+<div class="card-body">
+
+<h3>Floor Protection Sheets</h3>
+
+<p>
+Protective sheets for keeping finished floors safe during work.
+</p>
+
+<a class="card-link" href="#contact">
+Enquire →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- 10 -->
+
+<article class="card">
+
+<div class="card-img">
+
+<img
+src="https://raw.githubusercontent.com/padmavaticeilingimpex/padmavaticeilingimpex.github.io/main/212923.png"
+alt="Aluminium Channels">
+
+</div>
+
+<div class="card-body">
+
+<h3>Aluminium Channels</h3>
+
+<p>
+Lightweight and durable aluminium channel profiles.
+</p>
+
+<a class="card-link" href="#contact">
+Enquire →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- 11 -->
+
+<article class="card">
+
+<div class="card-img">
+
+<img
+src="https://raw.githubusercontent.com/padmavaticeilingimpex/padmavaticeilingimpex.github.io/main/212923.png"
+alt="L Clamps">
+
+</div>
+
+<div class="card-body">
+
+<h3>L Clamps</h3>
+
+<p>
+Strong multipurpose L clamps for reliable structural fixing.
+</p>
+
+<a class="card-link" href="#contact">
+Enquire →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- 12 -->
+
+<article class="card">
+
+<div class="card-img">
+
+<img
+src="https://raw.githubusercontent.com/padmavaticeilingimpex/padmavaticeilingimpex.github.io/main/212934.png"
+alt="Trapped Access Panels">
+
+</div>
+
+<div class="card-body">
+
+<h3>Trapped Access Panels</h3>
+
+<p>
+Discreet access panels for inspection and maintenance.
+</p>
+
+<a class="card-link" href="#contact">
+Enquire →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- 13 -->
+
+<article class="card">
+
+<div class="card-img">
+
+<img
+src="https://raw.githubusercontent.com/padmavaticeilingimpex/padmavaticeilingimpex.github.io/main/212920.png"
+alt="Grid Channels">
+
+</div>
+
+<div class="card-body">
+
+<h3>Grid Channels</h3>
+
+<p>
+Ceiling grid channel solutions for strong ceiling frameworks.
+</p>
+
+<a class="card-link" href="#contact">
+Enquire →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- 14 -->
+
+<article class="card">
+
+<div class="card-img">
+
+<img
+src="https://raw.githubusercontent.com/padmavaticeilingimpex/padmavaticeilingimpex.github.io/main/212920.png"
+alt="Acoustic Ceiling Tiles">
+
+</div>
+
+<div class="card-body">
+
+<h3>Acoustic Ceiling Tiles</h3>
+
+<p>
+Acoustic ceiling solutions for modern commercial spaces.
+</p>
+
+<a class="card-link" href="#contact">
+Enquire →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- 15 -->
+
+<article class="card">
+
+<div class="card-img">
+
+<img
+src="https://raw.githubusercontent.com/padmavaticeilingimpex/padmavaticeilingimpex.github.io/main/211705.png"
+alt="Drywall Partition Channels">
+
+</div>
+
+<div class="card-body">
+
+<h3>Drywall Partition Channels</h3>
+
+<p>
+Strong metal channels for durable drywall partition systems.
+</p>
+
+<a class="card-link" href="#contact">
+Enquire →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- 16 -->
+
+<article class="card">
+
+<div class="card-img">
+
+<img
+src="https://raw.githubusercontent.com/padmavaticeilingimpex/padmavaticeilingimpex.github.io/main/211705.png"
+alt="Drywall Stud Channels">
+
+</div>
+
+<div class="card-body">
+
+<h3>Drywall Stud Channels</h3>
+
+<p>
+Reliable stud channels for precise partition construction.
+</p>
+
+<a class="card-link" href="#contact">
+Enquire →
+</a>
+
+</div>
+
+</article>
+
+
+</div>
+</div>
 
 </section>
 
 
+<!-- ABOUT -->
 
-<!-- =========================
-     ABOUT
-========================= -->
+<section class="section about" id="about">
 
-<section
-  id="about"
-  class="about"
->
+<div class="container about-grid">
 
+<div class="about-visual">
 
-  <div class="about-wrap">
+<img
+src="https://raw.githubusercontent.com/padmavaticeilingimpex/padmavaticeilingimpex.github.io/main/211715.png"
+alt="Padmavati Ceiling Impex">
 
-
-    <div class="about-visual">
-    </div>
+</div>
 
 
-    <div class="about-copy">
+<div class="about-copy">
 
+<div class="eyebrow">
+ABOUT US
+</div>
 
-      <div class="eyebrow">
-        ABOUT US
-      </div>
+<h2>
+Quality Solutions for Better Interiors
+</h2>
 
+<p>
+<strong>Padmavati Ceiling Impex</strong> supplies products for
+gypsum ceilings, drywall partitions, access systems and modern
+interior construction.
+</p>
 
-      <h2>
-        Padmavati Ceiling Impex
-      </h2>
+<p>
+Our focus is on dependable materials, a useful product range
+and responsive service for contractors, builders, interior
+professionals and project requirements.
+</p>
 
+<div class="points">
 
-      <p>
+<div class="point">
+<b>01</b> Quality Products
+</div>
 
-        We supply gypsum ceiling, grid ceiling
-        and partition system products with a
-        focus on dependable materials and
-        wholesale service.
+<div class="point">
+<b>02</b> Wide Range
+</div>
 
-        <br><br>
+<div class="point">
+<b>03</b> Reliable Supply
+</div>
 
-        Our goal is to provide practical ceiling
-        and partition solutions for contractors,
-        builders, interior professionals and
-        projects.
+<div class="point">
+<b>04</b> Trusted Service
+</div>
 
-      </p>
+</div>
 
+</div>
 
-    </div>
-
-
-  </div>
+</div>
 
 </section>
 
 
+<!-- CONTACT -->
 
-<!-- =========================
-     CONTACT
-========================= -->
+<section class="section contact" id="contact">
 
-<section
-  id="contact"
-  class="contact"
->
+<div class="container contact-grid">
 
+<div>
 
-  <div class="section-head">
+<div class="eyebrow">
+GET IN TOUCH
+</div>
 
+<h2>
+Contact Padmavati Ceiling Impex
+</h2>
 
-    <div class="eyebrow">
-      GET IN TOUCH
-    </div>
+<p>
+For product enquiries, pricing, availability and project
+requirements, call or WhatsApp us.
+</p>
 
 
-    <h2>
-      Contact Padmavati Ceiling Impex
-    </h2>
+<div class="contact-card">
 
+<h3>
+Visit Our Shop
+</h3>
 
-    <p>
-      Get in touch for product enquiries
-      and wholesale orders.
-    </p>
+<div class="contact-line">
 
+<strong>Address:</strong><br>
 
-  </div>
+41, Bharathi Nagar 3rd St,
+Chakarabani Nagar,
+Sri Krishna Nagar,
+Bharathi Nagar,
+Chennai, Tamil Nadu 600095,
+India
 
+</div>
 
 
-  <div class="contact-grid">
+<div class="contact-line">
 
+<strong>Phone:</strong>
 
-    <!-- SHOP / MAP -->
+<a href="tel:+918122668792">
++91 8122668792
+</a>
 
-    <div class="contact-card">
+</div>
 
 
-      <div class="contact-info">
+<div class="contact-line">
 
+<strong>WhatsApp:</strong>
 
-        <h3>
-          Visit Our Shop
-        </h3>
+<a
+href="https://wa.me/918122668792"
+target="_blank">
 
+8122668792
 
-        <p class="address">
+</a>
 
-          41, Bharathi Nagar 3rd St,<br>
+</div>
 
-          Chakarabani Nagar,<br>
 
-          Sri Krishna Nagar,<br>
+<div class="buttons">
 
-          Bharathi Nagar,<br>
+<a
+class="btn btn-gold"
+href="tel:+918122668792">
 
-          Chennai, Tamil Nadu 600095
+Call Now
 
-        </p>
+</a>
 
 
-        <a
-          class="map-link"
-          href="https://share.google/ZkwNnFHVe367l6751"
-          target="_blank"
-          rel="noopener"
-        >
+<a
+class="btn btn-white"
+href="https://wa.me/918122668792"
+target="_blank">
 
-          Open in Google Maps →
+WhatsApp Us
 
-        </a>
+</a>
 
 
-      </div>
+<a
+class="btn btn-white"
+href="https://share.google/ZkwNnFHVe367l6751"
+target="_blank">
 
+Open Google Maps
 
-      <!-- GOOGLE MAP -->
+</a>
 
-      <iframe
+</div>
 
-        class="map"
+</div>
 
-        title="Padmavati Ceiling Impex Google Maps Location"
+</div>
 
-        loading="lazy"
 
-        allowfullscreen
+<div class="map-wrap">
 
-        src="https://www.google.com/maps?q=Padmavati%20Ceiling%20Impex%2C%2041%20Bharathi%20Nagar%203rd%20St%2C%20Chennai%2C%20Tamil%20Nadu%20600095&output=embed"
+<iframe
+src="https://www.google.com/maps?q=Padmavati%20Ceiling%20Impex%2C%2041%20Bharathi%20Nagar%203rd%20St%2C%20Chennai%2C%20Tamil%20Nadu%20600095&output=embed"
+loading="lazy"
+allowfullscreen
+title="Padmavati Ceiling Impex location">
+</iframe>
 
-      >
-      </iframe>
+</div>
 
-
-    </div>
-
-
-
-    <!-- PHONE / WHATSAPP -->
-
-    <div class="contact-card">
-
-
-      <div class="contact-info">
-
-
-        <h3>
-          Call / WhatsApp
-        </h3>
-
-
-        <p class="address">
-
-          8122668792
-
-        </p>
-
-
-        <a
-          class="whatsapp"
-          href="https://wa.me/918122668792"
-          target="_blank"
-          rel="noopener"
-        >
-
-          WhatsApp Us
-
-        </a>
-
-
-      </div>
-
-
-    </div>
-
-
-  </div>
-
+</div>
 
 </section>
-
 
 </main>
 
 
+<!-- FLOATING WHATSAPP -->
 
-<!-- =========================
-     FOOTER
-========================= -->
+<a
+class="float-wa"
+href="https://wa.me/918122668792"
+target="_blank"
+aria-label="Chat on WhatsApp">
 
-<footer>
+WA
 
-  © 2026 Padmavati Ceiling Impex
+</a>
 
-  <br>
 
-  Gypsum Ceiling &amp; Partition Systems
+<footer class="footer">
+
+© 2026
+<strong>Padmavati Ceiling Impex</strong>
+· Gypsum Ceiling &amp; Partition Systems
 
 </footer>
 
-
 </body>
-          </html>
+  </html>
