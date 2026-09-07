@@ -3,235 +3,209 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Padmavati Ceiling Impex - Gypsum Ceiling & Partition Systems">
+
 <title>Padmavati Ceiling Impex</title>
 
 <style>
 *{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+box-sizing:border-box;
+margin:0;
+padding:0;
 }
 
 body{
-  font-family:Arial,Helvetica,sans-serif;
-  background:#f7f7f7;
-  color:#172033;
-  line-height:1.6;
+font-family:Arial,Helvetica,sans-serif;
+background:#f5f6f8;
+color:#102039;
 }
 
 header{
-  background:#071a33;
-  padding:12px 20px;
-  position:sticky;
-  top:0;
-  z-index:1000;
-  box-shadow:0 2px 12px rgba(0,0,0,.2);
-}
-
-.header-inner{
-  max-width:1200px;
-  margin:auto;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+background:#061b35;
+padding:15px;
+text-align:center;
 }
 
 .logo{
-  max-width:260px;
-  width:100%;
-  height:auto;
-  object-fit:contain;
+width:190px;
+max-width:80%;
+height:auto;
 }
 
 .hero{
-  background:linear-gradient(135deg,#071a33,#17365d);
-  color:white;
-  padding:45px 20px;
-  text-align:center;
+background:linear-gradient(135deg,#071d39,#173d68);
+color:white;
+text-align:center;
+padding:40px 15px;
 }
 
 .hero h1{
-  font-size:36px;
-  margin-bottom:10px;
-  color:#d9b45b;
+font-size:29px;
+color:#e2bd5d;
+margin-bottom:8px;
 }
 
 .hero p{
-  font-size:18px;
-  max-width:800px;
-  margin:auto;
+font-size:15px;
 }
 
-.btn{
-  display:inline-block;
-  margin-top:20px;
-  padding:12px 24px;
-  background:#d9b45b;
-  color:#071a33;
-  text-decoration:none;
-  border-radius:8px;
-  font-weight:bold;
+.whatsapp{
+display:inline-block;
+margin-top:20px;
+background:#e2bd5d;
+color:#071b34;
+padding:11px 22px;
+border-radius:7px;
+font-weight:bold;
+text-decoration:none;
 }
 
 section{
-  max-width:1200px;
-  margin:auto;
-  padding:45px 20px;
+padding:38px 14px;
+max-width:1200px;
+margin:auto;
 }
 
-.section-title{
-  text-align:center;
-  font-size:30px;
-  color:#071a33;
-  margin-bottom:30px;
+.title{
+text-align:center;
+font-size:25px;
+margin-bottom:25px;
+color:#102039;
 }
 
-.product-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:20px;
+.products{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:14px;
 }
 
 .card{
-  background:white;
-  border-radius:14px;
-  overflow:hidden;
-  box-shadow:0 4px 16px rgba(0,0,0,.10);
-  transition:.25s;
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 3px 12px rgba(0,0,0,.12);
 }
 
-.card:hover{
-  transform:translateY(-5px);
+.card-image{
+width:100%;
+height:190px;
+background:#eeeeee;
+display:flex;
+align-items:center;
+justify-content:center;
+overflow:hidden;
 }
 
-.card img{
-  width:100%;
-  height:210px;
-  object-fit:cover;
-  display:block;
-  background:#eee;
+.card-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
 }
 
-.card-content{
-  padding:18px;
-  text-align:center;
-}
-
-.card h3{
-  color:#071a33;
-  font-size:18px;
+.card-name{
+min-height:58px;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:10px 6px;
+font-weight:bold;
+font-size:14px;
+line-height:1.35;
 }
 
 .about{
-  background:white;
+background:white;
+max-width:none;
 }
 
-.about-box{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:30px;
-  align-items:center;
+.about-inner{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:25px;
+align-items:center;
 }
 
-.about img{
-  width:100%;
-  max-height:400px;
-  object-fit:cover;
-  border-radius:14px;
+.about-inner img{
+width:100%;
+border-radius:12px;
 }
 
 .contact{
-  background:#071a33;
-  color:white;
+background:#071b34;
+color:white;
+max-width:none;
+text-align:center;
 }
 
-.contact .section-title{
-  color:#d9b45b;
+.contact .title{
+color:#e2bd5d;
 }
 
-.contact-box{
-  text-align:center;
+.contact p{
+margin:10px 0;
 }
 
-.contact-box p{
-  margin:10px 0;
-  font-size:17px;
-}
-
-.contact-box a{
-  color:#d9b45b;
-  text-decoration:none;
-  font-weight:bold;
+.contact a{
+color:#e2bd5d;
+font-weight:bold;
+text-decoration:none;
 }
 
 .map{
-  width:100%;
-  height:350px;
-  border:0;
-  border-radius:14px;
-  margin-top:25px;
+width:100%;
+height:300px;
+border:0;
+border-radius:10px;
+margin-top:20px;
 }
 
 footer{
-  background:#041120;
-  color:white;
-  text-align:center;
-  padding:20px;
-  font-size:14px;
+background:#030e1d;
+color:white;
+text-align:center;
+padding:18px 10px;
+font-size:13px;
 }
 
 @media(max-width:900px){
-  .product-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
+.products{
+grid-template-columns:repeat(2,1fr);
+}
 }
 
 @media(max-width:600px){
-  .logo{
-    max-width:220px;
-  }
 
-  .hero{
-    padding:35px 15px;
-  }
+.hero h1{
+font-size:27px;
+}
 
-  .hero h1{
-    font-size:28px;
-  }
+.products{
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+}
 
-  .hero p{
-    font-size:16px;
-  }
+.card-image{
+height:195px;
+}
 
-  section{
-    padding:35px 15px;
-  }
+.card-name{
+font-size:13px;
+}
 
-  .product-grid{
-    grid-template-columns:1fr 1fr;
-    gap:12px;
-  }
+.about-inner{
+grid-template-columns:1fr;
+}
 
-  .card img{
-    height:150px;
-  }
+section{
+padding:32px 12px;
+}
 
-  .card-content{
-    padding:12px 8px;
-  }
-
-  .card h3{
-    font-size:15px;
-  }
-
-  .about-box{
-    grid-template-columns:1fr;
-  }
-
-  .section-title{
-    font-size:25px;
-  }
+.logo{
+width:185px;
+}
 }
 </style>
 </head>
@@ -239,174 +213,371 @@ footer{
 <body>
 
 <header>
-  <div class="header-inner">
-    <img
-      class="logo"
-      src="211956-Picsart-BackgroundRemover.png"
-      alt="Padmavati Ceiling Impex"
-      onerror="this.style.display='none';"
-    >
-  </div>
+
+<img
+class="logo"
+src="211956-Picsart-BackgroundRemover.png"
+alt="Padmavati Ceiling Impex"
+onerror="this.src='product-2.png';"
+>
+
 </header>
 
-<section class="hero">
-  <h1>Padmavati Ceiling Impex</h1>
-  <p>Gypsum Ceiling & Partition Systems</p>
-  <a class="btn" href="https://wa.me/918122668792">WhatsApp Us</a>
-</section>
+
+<div class="hero">
+
+<h1>Padmavati Ceiling Impex</h1>
+
+<p>Gypsum Ceiling &amp; Partition Systems</p>
+
+<a
+class="whatsapp"
+href="https://wa.me/918122668792"
+>
+WhatsApp Us
+</a>
+
+</div>
+
 
 <section>
-  <h2 class="section-title">Our Product Solutions</h2>
 
-  <div class="product-grid">
+<h2 class="title">Our Product Solutions</h2>
 
-    <div class="card">
-      <img src="product-2.png" alt="Gypsum Boards">
-      <div class="card-content"><h3>Gypsum Boards</h3></div>
-    </div>
 
-    <div class="card">
-      <img src="product-5.png" alt="Gypsum Plaster">
-      <div class="card-content"><h3>Gypsum Plaster</h3></div>
-    </div>
+<div class="products">
 
-    <div class="card">
-      <img src="product-6.png" alt="Jointing Materials">
-      <div class="card-content"><h3>Jointing Materials</h3></div>
-    </div>
 
-    <div class="card">
-      <img src="product-7.png" alt="Ceiling Accessories">
-      <div class="card-content"><h3>Ceiling Accessories</h3></div>
-    </div>
+<!-- 1 -->
 
-    <div class="card">
-      <img src="IMG_20260907_005931.png" alt="Perforated Gypsum Boards">
-      <div class="card-content"><h3>Perforated Gypsum Boards</h3></div>
-    </div>
+<div class="card">
+<div class="card-image">
+<img
+src="product-2.png"
+alt="Gypsum Boards"
+>
+</div>
+<div class="card-name">
+Gypsum Boards
+</div>
+</div>
 
-    <div class="card">
-      <img src="IMG_20260907_010849.png" alt="Ceiling Suspension Accessories">
-      <div class="card-content"><h3>Ceiling Suspension Accessories</h3></div>
-    </div>
 
-    <div class="card">
-      <img src="Stronger Spaces Aluminium Systems.png" alt="Partition Accessories">
-      <div class="card-content"><h3>Partition Accessories</h3></div>
-    </div>
+<!-- 2 -->
 
-    <div class="card">
-      <img src="Premium PVC Fluted Panels Brochure.png" alt="PVC Fluted Panels">
-      <div class="card-content"><h3>PVC Fluted Panels</h3></div>
-    </div>
+<div class="card">
+<div class="card-image">
+<img
+src="product-5.png"
+alt="Gypsum Plaster"
+>
+</div>
+<div class="card-name">
+Gypsum Plaster
+</div>
+</div>
 
-    <div class="card">
-      <img src="Premium Floor Protection Sheets Brochure.png" alt="Floor Protection Sheets">
-      <div class="card-content"><h3>Floor Protection Sheets</h3></div>
-    </div>
 
-    <div class="card">
-      <img src="Stronger Spaces Aluminium Systems.png" alt="Aluminium Channels">
-      <div class="card-content"><h3>Aluminium Channels</h3></div>
-    </div>
+<!-- 3 -->
 
-    <div class="card">
-      <img src="Stronger Spaces Aluminium Systems.png" alt="L Clamps">
-      <div class="card-content"><h3>L Clamps</h3></div>
-    </div>
+<div class="card">
+<div class="card-image">
+<img
+src="product-6.png"
+alt="Jointing Materials"
+>
+</div>
+<div class="card-name">
+Jointing Materials
+</div>
+</div>
 
-    <div class="card">
-      <img src="Trapped Access Panels Brochure.png" alt="Trapped Access Panels">
-      <div class="card-content"><h3>Trapped Access Panels</h3></div>
-    </div>
 
-    <div class="card">
-      <img src="Gypsum Ceiling Solutions Catalogue.png" alt="Grid Channels">
-      <div class="card-content"><h3>Grid Channels</h3></div>
-    </div>
+<!-- 4 -->
 
-    <div class="card">
-      <img src="Gypsum Ceiling Solutions Catalogue.png" alt="Acoustic Ceiling Tiles">
-      <div class="card-content"><h3>Acoustic Ceiling Tiles</h3></div>
-    </div>
+<div class="card">
+<div class="card-image">
+<img
+src="product-7.png"
+alt="Ceiling Accessories"
+>
+</div>
+<div class="card-name">
+Ceiling Accessories
+</div>
+</div>
 
-    <div class="card">
-      <img src="Modern Drywall Partition Systems Poster.png" alt="Drywall Partition Channels">
-      <div class="card-content"><h3>Drywall Partition Channels</h3></div>
-    </div>
 
-    <div class="card">
-      <img src="Modern Drywall Partition Systems Poster.png" alt="Drywall Stud Channels">
-      <div class="card-content"><h3>Drywall Stud Channels</h3></div>
-    </div>
+<!-- 5 -->
 
-  </div>
+<div class="card">
+<div class="card-image">
+<img
+src="IMG_20260907_005931.png"
+alt="Perforated Gypsum Boards"
+onerror="this.src='product-2.png';"
+>
+</div>
+<div class="card-name">
+Perforated Gypsum Boards
+</div>
+</div>
+
+
+<!-- 6 -->
+
+<div class="card">
+<div class="card-image">
+<img
+src="IMG_20260907_010849.png"
+alt="Ceiling Suspension Accessories"
+onerror="this.src='product-7.png';"
+>
+</div>
+<div class="card-name">
+Ceiling Suspension Accessories
+</div>
+</div>
+
+
+<!-- 7 -->
+
+<div class="card">
+<div class="card-image">
+<img
+src="product-7.png"
+alt="Partition Accessories"
+>
+</div>
+<div class="card-name">
+Partition Accessories
+</div>
+</div>
+
+
+<!-- 8 -->
+
+<div class="card">
+<div class="card-image">
+<img
+src="product-5.png"
+alt="PVC Fluted Panels"
+>
+</div>
+<div class="card-name">
+PVC Fluted Panels
+</div>
+</div>
+
+
+<!-- 9 -->
+
+<div class="card">
+<div class="card-image">
+<img
+src="product-6.png"
+alt="Floor Protection Sheets"
+>
+</div>
+<div class="card-name">
+Floor Protection Sheets
+</div>
+</div>
+
+
+<!-- 10 -->
+
+<div class="card">
+<div class="card-image">
+<img
+src="product-7.png"
+alt="Aluminium Channels"
+>
+</div>
+<div class="card-name">
+Aluminium Channels
+</div>
+</div>
+
+
+<!-- 11 -->
+
+<div class="card">
+<div class="card-image">
+<img
+src="product-7.png"
+alt="L Clamps"
+>
+</div>
+<div class="card-name">
+L Clamps
+</div>
+</div>
+
+
+<!-- 12 -->
+
+<div class="card">
+<div class="card-image">
+<img
+src="IMG_20260907_005931.png"
+alt="Trapped Access Panels"
+onerror="this.src='product-6.png';"
+>
+</div>
+<div class="card-name">
+Trapped Access Panels
+</div>
+</div>
+
+
+<!-- 13 -->
+
+<div class="card">
+<div class="card-image">
+<img
+src="product-6.png"
+alt="Grid Channels"
+>
+</div>
+<div class="card-name">
+Grid Channels
+</div>
+</div>
+
+
+<!-- 14 -->
+
+<div class="card">
+<div class="card-image">
+<img
+src="product-6.png"
+alt="Acoustic Ceiling Tiles"
+>
+</div>
+<div class="card-name">
+Acoustic Ceiling Tiles
+</div>
+</div>
+
+
+<!-- 15 -->
+
+<div class="card">
+<div class="card-image">
+<img
+src="IMG_20260907_010849.png"
+alt="Drywall Partition Channels"
+onerror="this.src='product-5.png';"
+>
+</div>
+<div class="card-name">
+Drywall Partition Channels
+</div>
+</div>
+
+
+<!-- 16 -->
+
+<div class="card">
+<div class="card-image">
+<img
+src="IMG_20260907_010849.png"
+alt="Drywall Stud Channels"
+onerror="this.src='product-5.png';"
+>
+</div>
+<div class="card-name">
+Drywall Stud Channels
+</div>
+</div>
+
+
+</div>
+
 </section>
+
 
 <section class="about">
-  <h2 class="section-title">About Us</h2>
 
-  <div class="about-box">
-    <img
-      src="Premium Gypsum Interior Solutions.png"
-      alt="Gypsum Interior Solutions"
-    >
+<h2 class="title">About Us</h2>
 
-    <div>
-      <h2>Padmavati Ceiling Impex</h2>
-      <br>
-      <p>
-        We provide quality gypsum ceiling, drywall partition,
-        ceiling accessories, PVC fluted panels, aluminium systems,
-        access panels and related interior products.
-      </p>
-      <br>
-      <p>
-        Our goal is to provide reliable materials and professional
-        solutions for modern interior projects.
-      </p>
-    </div>
-  </div>
+<div class="about-inner">
+
+<img
+src="product-2.png"
+alt="Padmavati Ceiling Impex"
+>
+
+<div>
+
+<h2>Padmavati Ceiling Impex</h2>
+
+<br>
+
+<p>
+We provide quality gypsum ceiling,
+drywall partition, ceiling accessories,
+PVC fluted panels, aluminium systems,
+access panels and interior products.
+</p>
+
+<br>
+
+<p>
+Reliable materials and professional
+solutions for modern interior projects.
+</p>
+
+</div>
+
+</div>
+
 </section>
+
 
 <section class="contact">
-  <h2 class="section-title">Contact Us</h2>
 
-  <div class="contact-box">
+<h2 class="title">Contact Us</h2>
 
-    <p><strong>Padmavati Ceiling Impex</strong></p>
+<p><strong>Padmavati Ceiling Impex</strong></p>
 
-    <p>
-      📞
-      <a href="tel:+918122668792">
-        +91 8122668792
-      </a>
-    </p>
+<p>
+📞
+<a href="tel:+918122668792">
++91 8122668792
+</a>
+</p>
 
-    <p>
-      💬
-      <a href="https://wa.me/918122668792">
-        WhatsApp
-      </a>
-    </p>
+<p>
+💬
+<a href="https://wa.me/918122668792">
+WhatsApp
+</a>
+</p>
 
-    <p>
-      📍 41, Bharathi Nagar 3rd St, Chakarabani Nagar,
-      Sri Krishna Nagar, Bharathi Nagar,
-      Chennai, Tamil Nadu 600095, India
-    </p>
+<p>
+📍 41, Bharathi Nagar 3rd St,
+Chakarabani Nagar,
+Sri Krishna Nagar,
+Bharathi Nagar,
+Chennai, Tamil Nadu 600095, India
+</p>
 
-    <iframe
-      class="map"
-      src="https://www.google.com/maps?q=Padmavati%20Ceiling%20Impex%2C%2041%20Bharathi%20Nagar%203rd%20St%2C%20Chakarabani%20Nagar%2C%20Chennai%20600095&output=embed"
-      loading="lazy">
-    </iframe>
+<iframe
+class="map"
+src="https://www.google.com/maps?q=Padmavati%20Ceiling%20Impex%2041%20Bharathi%20Nagar%203rd%20St%20Chennai%20600095&output=embed"
+loading="lazy">
+</iframe>
 
-  </div>
 </section>
 
+
 <footer>
-  © 2026 Padmavati Ceiling Impex · Gypsum Ceiling & Partition Systems
+
+© 2026 Padmavati Ceiling Impex ·
+Gypsum Ceiling &amp; Partition Systems
+
 </footer>
 
 </body>
